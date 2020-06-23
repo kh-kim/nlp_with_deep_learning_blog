@@ -1,0 +1,2 @@
+# Stochastic Gradient Descent \(SGD\)
+
