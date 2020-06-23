@@ -23,8 +23,8 @@ last_modified_date: 2020-06-24T00:00:00+0000
 - nlp.with.deep.learning@gmail.com
 - Principal M/L Research Engineer @ MakinaRocks
 - Publications
-  - 김기현의 자연어처리 딥러닝 캠프 (한빛미디어, 2019)
-  - RaPP: Novelty Detection with Reconstruction along Projection Patwhay (ICLR, 2020)
+  - [김기현의 자연어처리 딥러닝 캠프 (한빛미디어, 2019)](http://www.yes24.com/Product/Goods/74802622)
+  - [RaPP: Novelty Detection with Reconstruction along Projection Patwhay (ICLR, 2020)](https://openreview.net/forum?id=HkgeGeBYDB)
 - 관심분야
   - Natural Language Generations: Machine Translations
   - Anomaly Detection, Autoencoders
