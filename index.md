@@ -10,7 +10,7 @@ last_modified_date: 2020-06-24T00:00:00+0000
 # 김기현의 딥러닝을 활용한 자연어처리
 {: .fs-9 }
 
-이 블로그는 <김기현의 딥러닝을 활용한 자연어처리> 온라인 강의 및 책 출판을 위한 블로그입니다. 현재 판매중인 온라인 강의는 아래의 사이트에서 보실 수 있습니다.
+이 블로그는 **김기현의 딥러닝을 활용한 자연어처리** 온라인 강의 및 책 출판을 위한 블로그입니다. 현재 판매중인 온라인 강의는 아래의 사이트에서 보실 수 있습니다.
 {: .fs-6 .fw-300 }
 
 [Oneline 강의](https://www.fastcampus.co.kr/data_online_dpnlp){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 } [GitHub](https://github.com/khkim){: .btn .fs-5 .mb-4 .mb-md-0 }
