@@ -1,2 +1,0 @@
-# Minimum Risk Training \(MRT\)
-

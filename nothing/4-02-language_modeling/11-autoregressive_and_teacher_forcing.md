@@ -1,2 +1,0 @@
-# Autoregressive and Teacher Forcing
-

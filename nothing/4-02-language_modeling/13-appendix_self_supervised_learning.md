@@ -1,2 +1,0 @@
-# Appendix: Self-supervised Learning
-

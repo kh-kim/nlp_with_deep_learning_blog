@@ -1,2 +1,0 @@
-# 실습: TorchText
-

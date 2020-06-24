@@ -1,2 +1,0 @@
-# Smoothing and Discounting
-

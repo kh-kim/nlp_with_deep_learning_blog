@@ -1,2 +1,0 @@
-# Regularization 이란?
-

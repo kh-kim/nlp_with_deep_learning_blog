@@ -1,2 +1,0 @@
-# Maximum A Posterior \(MAP\)
-

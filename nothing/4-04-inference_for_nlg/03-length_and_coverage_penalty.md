@@ -1,2 +1,0 @@
-# Length & Coverage Penalty
-

@@ -1,2 +1,0 @@
-# Conditional Sequence-to-Sequence
-

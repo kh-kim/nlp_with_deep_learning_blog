@@ -1,2 +1,0 @@
-# Softmax & Cross Entropy
-

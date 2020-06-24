@@ -1,2 +1,0 @@
-# Maximum Likelihood Estimation
-
