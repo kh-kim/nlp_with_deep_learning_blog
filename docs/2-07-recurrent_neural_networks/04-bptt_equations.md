@@ -53,8 +53,9 @@ T=4\\
 \frac{\partial\mathcal{L}(\theta)}{\partial\phi}=\sum_{t=1}^{T}{
     \frac{\partial\mathcal{L}(\theta)}{\partial\hat{y}_t}\frac{\partial\hat{y}_t}{\partial\phi}
 } \\
-\\
-\begin{aligned}
+\end{gathered}$$
+
+$$\begin{aligned}
 \frac{\partial\mathcal{L}(\theta)}{\partial\psi}
     =&\frac{\partial\mathcal{L}(\theta)}{\partial\hat{y}_4}\frac{\partial\hat{y}_4}{\partial{h_4}}\frac{\partial{h_4}}{\partial\psi}
     +\frac{\partial\mathcal{L}(\theta)}{\partial\hat{y}_4}\frac{\partial\hat{y}_4}{\partial{h_4}}\frac{\partial{h_4}}{\partial{h_3}}\frac{\partial{h_3}}{\partial\psi}
@@ -74,8 +75,7 @@ T=4\\
                 }
             \Big)\frac{\partial{h_k}}{\partial\psi}
         }
-\end{aligned}
-\end{gathered}$$
+\end{aligned}$$
 
 ## Gradient Vanishing
 
