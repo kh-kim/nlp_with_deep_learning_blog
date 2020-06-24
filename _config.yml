@@ -15,8 +15,8 @@
 # in the templates via {{ site.myvariable }}.
 title: Just the Docs
 description: A Jekyll theme for documentation
-baseurl: "/just-the-docs" # the subpath of your site, e.g. /blog
-url: "https://pmarsceill.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "/nlp_with_deep_learning_blog" # the subpath of your site, e.g. /blog
+url: "https://kh-kim.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 
 permalink: pretty
 exclude: ["node_modules/", "*.gemspec", "*.gem", "Gemfile", "Gemfile.lock", "package.json", "package-lock.json",  "script/", "LICENSE.txt", "lib/", "bin/", "README.md", "Rakefile"]
@@ -35,8 +35,8 @@ heading_anchors: true
 
 # Aux links for the upper right navigation
 aux_links:
-  "Just the Docs on GitHub":
-    - "//github.com/pmarsceill/just-the-docs"
+  "Ki's Blog":
+    - "//github.com/kh-kim/nlp_with_deep_learning_blog"
 
 # Makes Aux links open in a new tab. Default is false
 aux_links_new_tab: false
