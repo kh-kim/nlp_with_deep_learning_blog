@@ -25,15 +25,15 @@ T=4 \\
 
 $$\begin{aligned}
 \frac{\partial\mathcal{L}(\theta)}{\partial\psi}
-    =&\frac{\partial\mathcal{L}(\theta)}{\partial\hat{y}}\frac{\partial\hat{y}}{\partial{h_4}}\frac{\partial{h_4}}{\partial\psi}
-    +\frac{\partial\mathcal{L}(\theta)}{\partial\hat{y}}\frac{\partial\hat{y}}{\partial{h_4}}\frac{\partial{h_4}}{\partial{h_3}}\frac{\partial{h_3}}{\partial\psi}
-    +\frac{\partial\mathcal{L}(\theta)}{\partial\hat{y}}\frac{\partial\hat{y}}{\partial{h_4}}\frac{\partial{h_4}}{\partial{h_3}}\frac{\partial{h_3}}{\partial{h_2}}\frac{\partial{h_2}}{\partial\psi}
-    +\frac{\partial\mathcal{L}(\theta)}{\partial\hat{y}}\frac{\partial\hat{y}}{\partial{h_4}}\frac{\partial{h_4}}{\partial{h_3}}\frac{\partial{h_3}}{\partial{h_2}}\frac{\partial{h_2}}{\partial{h_1}}\frac{\partial{h_1}}{\partial\psi} \\
-    =&\sum_{t=1}^{T}{
-        \frac{\partial\mathcal{L}(\theta)}{\partial\hat{y}}\frac{\partial\hat{y}}{\partial{h_4}}\Big(\prod_{i=t}^{T-1}{
-            \frac{\partial{h_{i+1}}}{\partial{h_i}}
-        }\Big)\frac{\partial{h_t}}{\partial\psi}
-    }
+=&\frac{\partial\mathcal{L}(\theta)}{\partial\hat{y}}\frac{\partial\hat{y}}{\partial{h_4}}\frac{\partial{h_4}}{\partial\psi}
++\frac{\partial\mathcal{L}(\theta)}{\partial\hat{y}}\frac{\partial\hat{y}}{\partial{h_4}}\frac{\partial{h_4}}{\partial{h_3}}\frac{\partial{h_3}}{\partial\psi}
++\frac{\partial\mathcal{L}(\theta)}{\partial\hat{y}}\frac{\partial\hat{y}}{\partial{h_4}}\frac{\partial{h_4}}{\partial{h_3}}\frac{\partial{h_3}}{\partial{h_2}}\frac{\partial{h_2}}{\partial\psi}
++\frac{\partial\mathcal{L}(\theta)}{\partial\hat{y}}\frac{\partial\hat{y}}{\partial{h_4}}\frac{\partial{h_4}}{\partial{h_3}}\frac{\partial{h_3}}{\partial{h_2}}\frac{\partial{h_2}}{\partial{h_1}}\frac{\partial{h_1}}{\partial\psi} \\
+=&\sum_{t=1}^{T}{
+    \frac{\partial\mathcal{L}(\theta)}{\partial\hat{y}}\frac{\partial\hat{y}}{\partial{h_4}}\Big(\prod_{i=t}^{T-1}{
+        \frac{\partial{h_{i+1}}}{\partial{h_i}}
+    }\Big)\frac{\partial{h_t}}{\partial\psi}
+}
 \end{aligned}$$
 
 ## Many to Many
@@ -67,7 +67,7 @@ $$\begin{aligned}
 &+\frac{\partial\mathcal{L}(\theta)}{\partial\hat{y}_2}\frac{\partial\hat{y}_2}{\partial{h_2}}\frac{\partial{h_2}}{\partial\psi}
 +\frac{\partial\mathcal{L}(\theta)}{\partial\hat{y}_2}\frac{\partial\hat{y}_2}{\partial{h_2}}\frac{\partial{h_2}}{\partial{h_1}}\frac{\partial{h_1}}{\partial\psi} \\
 &+\frac{\partial\mathcal{L}(\theta)}{\partial\hat{y}_1}\frac{\partial\hat{y}_1}{\partial{h_1}}\frac{\partial{h_1}}{\partial\psi} \\
-=&\sum_{t=1}^T
+=&\sum_{t=1}^T{
     \sum_{k=1}^{t}{
         \frac{\partial\mathcal{L}(\theta)}{\partial\hat{y}_t}\frac{\partial\hat{y}_t}{\partial{h_t}}\Big(
             \prod_{i=k}^{t-1}{
@@ -75,6 +75,7 @@ $$\begin{aligned}
             }
         \Big)\frac{\partial{h_k}}{\partial\psi}
     }
+}
 \end{aligned}$$
 
 ## Gradient Vanishing
