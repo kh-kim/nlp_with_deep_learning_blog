@@ -8,7 +8,7 @@ nav_order: 06
 # LSTM
 
 $$
-i_t=\sigma(W_i\cdot[x_t, h_{t-1}])
+i_t
 $$
 
 $$
