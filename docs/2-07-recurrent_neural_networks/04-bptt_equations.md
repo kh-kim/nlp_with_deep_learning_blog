@@ -21,8 +21,9 @@ $$\begin{gathered}
 T=4 \\
 \\
 \frac{\partial\mathcal{L}(\theta)}{\partial\phi}=\frac{\partial\mathcal{L}(\theta)}{\partial\hat{y}}\frac{\partial\hat{y}}{\partial\phi} \\
-\\
-\begin{aligned}
+\end{gathered}$$
+
+$$\begin{aligned}
 \frac{\partial\mathcal{L}(\theta)}{\partial\psi}
     =&\frac{\partial\mathcal{L}(\theta)}{\partial\hat{y}}\frac{\partial\hat{y}}{\partial{h_4}}\frac{\partial{h_4}}{\partial\psi}
     +\frac{\partial\mathcal{L}(\theta)}{\partial\hat{y}}\frac{\partial\hat{y}}{\partial{h_4}}\frac{\partial{h_4}}{\partial{h_3}}\frac{\partial{h_3}}{\partial\psi}
@@ -33,8 +34,7 @@ T=4 \\
             \frac{\partial{h_{i+1}}}{\partial{h_i}}
         }\Big)\frac{\partial{h_t}}{\partial\psi}
     }
-\end{aligned}
-\end{gathered}$$
+\end{aligned}$$
 
 ## Many to Many
 

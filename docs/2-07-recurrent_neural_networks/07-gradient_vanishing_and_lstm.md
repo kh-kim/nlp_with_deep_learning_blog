@@ -35,8 +35,7 @@ $$
 $$
 -->
 
-$$\begin{gathered}
-\begin{aligned}
+$$\begin{aligned}
 \frac{\partial{c_t}}{\partial{W_f}}&=\frac{\partial{c_t}}{\partial{W_f}}+\frac{\partial{c_t}}{\partial{c_{t-1}}}\frac{\partial{c_{t-1}}}{\partial{W_f}}+\cdots+\frac{\partial{c_t}}{\partial{c_{t-1}}}\frac{\partial{c_{t-1}}}{\partial{c_{t-2}}}\cdots\frac{\partial{c_1}}{\partial{W_f}} \\
 &=\frac{\partial{c_t}}{\partial{W_f}}+\frac{\partial{c_{t-1}}}{\partial{W_f}}\frac{\partial{c_t}}{\partial{c_{t-1}}}+\cdots+\frac{\partial{c_1}}{\partial{W_f}}\prod_{i=1}^{t-1}{
     \frac{\partial{c_{i+1}}}{\partial{c_i}}
@@ -44,15 +43,15 @@ $$\begin{gathered}
 &=\sum_{i=1}^{t}{\frac{\partial{c_i}}{\partial{W_f}}\prod_{j=i}^{t-1}{
     \frac{\partial{c_{j+1}}}{\partial{c_j}}}
 }
-\end{aligned} \\
-\\
-\\
-\begin{aligned}
+\end{aligned}$$
+
+$$\begin{aligned}
 \frac{\partial{c_t}}{\partial{c_{t-1}}}&=\frac{\partial{f_t}}{\partial{c_{t-1}}}\otimes{c_{t-1}}+f_t\otimes\frac{\partial{c_{t-1}}}{\partial{c_{t-1}}}+\frac{\partial{i_t}}{\partial{c_{t-1}}}\otimes{g_t}+i_t\otimes\frac{\partial{g_t}}{\partial{c_{t-1}}} \\
 &=\frac{\partial{f_t}}{\partial{c_{t-1}}}\otimes{c_{t-1}}+f_t+\frac{\partial{i_t}}{\partial{c_{t-1}}}\otimes{g_t}+i_t\otimes\frac{\partial{g_t}}{\partial{c_{t-1}}} \\
 &=\frac{\partial{f_t}}{\partial{h_{t-1}}}\frac{\partial{h_{t-1}}}{\partial{c_{t-1}}}\otimes{c_{t-1}}+f_t+\frac{\partial{i_t}}{\partial{h_{t-1}}}\frac{\partial{h_{t-1}}}{\partial{c_{t-1}}}\otimes{g_t}+i_t\otimes\frac{\partial{g_t}}{\partial{h_{t-1}}}\frac{\partial{h_{t-1}}}{\partial{c_{t-1}}} \\
 &\approx{f_t}
-\end{aligned} \\
-\\
+\end{aligned}$$
+
+$$
 \frac{\partial{c_t}}{\partial{W_f}}=\sum_{i=1}^{t}{\frac{\partial{c_1}}{\partial{W_f}}\prod_{j=1}^{i-1}{f_{j+1}}}
-\end{gathered}$$
+$$
