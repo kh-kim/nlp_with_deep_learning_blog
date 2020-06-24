@@ -1,3 +1,10 @@
+---
+layout: default
+title: Introduction to CNN
+parent: Convolutional Neural Networks
+nav_order: 01
+---
+
 # CNN 소개
 
 $$\begin{aligned}

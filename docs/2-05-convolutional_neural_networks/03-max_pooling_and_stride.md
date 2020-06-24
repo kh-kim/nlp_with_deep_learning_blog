@@ -1,3 +1,10 @@
+---
+layout: default
+title: Max-pooling and Stride
+parent: Convolutional Neural Networks
+nav_order: 03
+---
+
 # Max-pooling & Stride
 
 $$\begin{aligned}

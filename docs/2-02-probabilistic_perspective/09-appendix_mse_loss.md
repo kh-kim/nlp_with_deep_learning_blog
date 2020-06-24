@@ -1,3 +1,10 @@
+---
+layout: default
+title: Appendix - MSE Loss
+parent: Probabilistic Perspective
+nav_order: 09
+---
+
 # Appendix: MSE Loss
 
 ## Gaussian PDF

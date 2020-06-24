@@ -1,3 +1,10 @@
+---
+layout: default
+title: Basic Stats
+parent: Probabilistic Perspective
+nav_order: 02
+---
+
 # 기본 확률 통계
 
 ## Random Variable
