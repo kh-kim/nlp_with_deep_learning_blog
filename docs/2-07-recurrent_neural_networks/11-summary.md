@@ -1,3 +1,10 @@
+---
+layout: default
+title: Wrap-up
+parent: Recurrent Neural Networks
+nav_order: 11
+---
+
 # 정리하며
 
 $$\begin{aligned}
