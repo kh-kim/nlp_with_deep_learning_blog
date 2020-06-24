@@ -1,3 +1,10 @@
+---
+layout: default
+title: Equations
+parent: Word Embedding
+nav_order: 11
+---
+
 # 수식: Word2Vec, GloVe & FastText
 
 ## Skip-gram

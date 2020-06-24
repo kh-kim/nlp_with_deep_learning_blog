@@ -1,3 +1,10 @@
+---
+layout: default
+title: Introduction to Text Classification
+parent: Text Classification
+nav_order: 01
+---
+
 # 들어가며
 
 ## Problem Definition in Probabilistic Perspective

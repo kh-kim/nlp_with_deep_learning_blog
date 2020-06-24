@@ -1,3 +1,10 @@
+---
+layout: default
+title: RNN Step by Step
+parent: Recurrent Neural Networks
+nav_order: 02
+---
+
 # RNN Step-by-Step 들여다보기
 
 ## Input Shape

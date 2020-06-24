@@ -1,3 +1,10 @@
+---
+layout: default
+title: How does LSTM solve Gradient Vanishing
+parent: Recurrent Neural Networks
+nav_order: 07
+---
+
 # Gradient Vanishing과 LSTM
 
 $$\begin{aligned}

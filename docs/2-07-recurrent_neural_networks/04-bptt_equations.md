@@ -1,3 +1,10 @@
+---
+layout: default
+title: BPTT Equations
+parent: Recurrent Neural Networks
+nav_order: 04
+---
+
 # 수식: BPTT
 
 ## Many to One
