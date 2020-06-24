@@ -1,9 +1,9 @@
 ---
 layout: default
 title: Adv. Topics on Machine Translations
-nav_order: 4-01
+nav_order: 4-09
 has_children: true
-permalink: /docs/practical-exercises
+permalink: /docs/adv-mt
 ---
 
 # Advanced Machine Translations
