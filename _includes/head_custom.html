@@ -1,3 +1,4 @@
+{% if !page.disable_mathjax %}
 <script type="text/x-mathjax-config">
   MathJax.Hub.Config({
       TeX: {
@@ -17,7 +18,8 @@
   MathJax.Hub.Register.MessageHook("TeX Jax - parse error",function (message) {
       alert("Math Processing Error: "+message[1]);
     });
-  </script>
-  <script type="text/javascript" async
-    src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
-  </script>
+</script>
+<script type="text/javascript" async
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+{% endif %}
