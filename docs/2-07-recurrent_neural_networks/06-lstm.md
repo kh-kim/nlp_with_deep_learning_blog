@@ -10,13 +10,6 @@ nav_order: 06
 $$
 \begin{aligned}
 i_t&=\sigma(W_i\cdot[x_t, h_{t-1}]) \\
-f_t&=\sigma(W_f\cdot[x_t, h_{t-1}])
-\end{aligned}
-$$
-
-$$
-\begin{aligned}
-i_t&=\sigma(W_i\cdot[x_t, h_{t-1}]) \\
 f_t&=\sigma(W_f\cdot[x_t, h_{t-1}]) \\
 g_t&=\text{tanh}(W_g\cdot[x_t, h_{t-1}]) \\
 o_t&=\sigma(W_o\cdot[x_t, h_{t-1}]) \\
