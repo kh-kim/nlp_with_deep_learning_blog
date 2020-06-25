@@ -10,6 +10,6 @@ nav_order: 06
 $$
 \begin{aligned}
 i_t&=\sigma(W_i\cdot[x_t, h_{t-1}]) \\
-f_t&=\sigma(W_f\cdot[x_t, h_{t-1}]) \\
+f_t&=\sigma(W_f\cdot[x_t, h_{t-1}])
 \end{aligned}
 $$
