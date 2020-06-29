@@ -7,3 +7,17 @@ nav_order: 01
 
 # 들어가며
 
+## Applications
+
+### Automatic Speech Recognition (ASR)
+
+$$\begin{gathered}
+y_{1:n}=\text{argmax }P(\text{y}|x;\theta) \\
+\text{where }x\text{ is audio signal, and }y_{1:n}\text{ is word sequence, }y_{1:n}=\{y_1,y_2,\cdots,y_n\}.
+\end{gathered}$$
+
+$$\begin{aligned}
+\hat{y}&={\underset{y\in\mathcal{Y}}\text{argmax}}P(y|x) \\
+&={\underset{y\in\mathcal{Y}}\text{argmax}}\frac{P(y|x)P(y)}{P(x)} \\
+&={\underset{y\in\mathcal{Y}}\text{argmax}}P(y|x)P(y)
+\end{aligned}$$
