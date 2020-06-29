@@ -2,7 +2,7 @@
 layout: default
 title: Introduction to Sequence to Sequence
 parent: Sequence to Sequence
-nav_order: 02
+nav_order: 4-03-02
 ---
 
 # Sequence-to-Sequence

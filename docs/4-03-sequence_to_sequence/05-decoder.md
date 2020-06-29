@@ -2,7 +2,7 @@
 layout: default
 title: Decoder
 parent: Sequence to Sequence
-nav_order: 05
+nav_order: 4-03-05
 ---
 
 # Decoder
