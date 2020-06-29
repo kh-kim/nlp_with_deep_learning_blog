@@ -2,7 +2,7 @@
 layout: default
 title: n-gram
 parent: Language Modeling
-nav_order: 03
+nav_order: 4-02-03
 ---
 
 # n-gram
