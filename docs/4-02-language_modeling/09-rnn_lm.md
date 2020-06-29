@@ -25,8 +25,8 @@ $$\begin{gathered}
 \text{where }x_t\text{ is one-hot vector, and }f_\theta\text{ is model with parameter }\theta. \\
 \\
 \begin{aligned}
-f(x_{t-1},h_{t-1})&=\text{softmax}(\text{RNN}(\text{emb}(x_{t-1}),h_{t-1})\cdot{W})\text{, where }W\in\mathbb{R}^{\text{hidden\_size}\times|V|} \\
-&=\text{softmax}(h_t\cdot{W})\text{, where }h_t\in\mathbb{R}^{\text{batch\_size}\times\text{hidden\_size}} \\
+f(x_{t-1},h_{t-1})&=\text{softmax}(\text{RNN}(\text{emb}(x_{t-1}),h_{t-1})\cdot{W})\text{, where }W\in\mathbb{R}^{\text{hidden_size}\times|V|} \\
+&=\text{softmax}(h_t\cdot{W})\text{, where }h_t\in\mathbb{R}^{\text{batch_size}\times\text{hidden_size}} \\
 &=\hat{x}_t
 \end{aligned} \\
 \text{where }\hat{x}_t\text{ is a probability distribution that }P(\cdot|x_{<t};\theta).
