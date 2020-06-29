@@ -13,7 +13,17 @@ $$
 \hat{x}_t=\underset{x_t\in\mathcal{X}}{\text{argmax}}\log{P(x_t|\hat{x}_{<t};\theta)}
 $$
 
-## MLE
+### Auto-regressive
+
+$$\begin{aligned}
+\hat{x}_{t=1}&=\underset{x_t\in\mathcal{X}}{\text{argmax}}\log{P(x_{t=1}|x_0;\theta)}\text{ where }x_0=\text{<BOS>}. \\
+\hat{x}_{t=2}&=\underset{x_t\in\mathcal{X}}{\text{argmax}}\log{P(x_{t=2}|x_0,\hat{x}_1;\theta)} \\
+\hat{x}_{t=3}&=\underset{x_t\in\mathcal{X}}{\text{argmax}}\log{P(x_{t=3}|x_0,\hat{x}_1,\hat{x}_2;\theta)} \\
+&\cdots \\
+\hat{x}_t&=\underset{x_t\in\mathcal{X}}{\text{argmax}}\log{P(x_t|x_0,\hat{x}_{<t};\theta)} \\
+\end{aligned}$$
+
+## Training with MLE
 
 $$\begin{gathered}
 \mathcal{D}=\{x^i\}_{i=1}^N \\
