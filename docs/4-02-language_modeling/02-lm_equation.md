@@ -33,6 +33,16 @@ $$
 \log{P(x_{1:n})}=\sum_{i=1}^N{\log{P(x_i|x_{<i})}}
 $$
 
+### Example
+
+$$\begin{aligned}
+P(\text{<BOS>, I, love, to, play, <EOS>})&=P(\text{<EOS>}|\text{<BOS>, I, love, to, play})P(\text{<BOS>, I, love, to, play}) \\
+&=P(\text{<EOS>}|\text{<BOS>, I, love, to, play})P(\text{play}|\text{<BOS>, I, love, to})P(\text{<BOS>, I, love, to}) \\
+&=P(\text{<EOS>}|\text{<BOS>, I, love, to, play})P(\text{play}|\text{<BOS>, I, love, to})P(\text{to}|\text{<BOS>, I, love})P(\text{<BOS>, I, love}) \\
+&=P(\text{<EOS>}|\text{<BOS>, I, love, to, play})P(\text{play}|\text{<BOS>, I, love, to})P(\text{to}|\text{<BOS>, I, love})P(\text{love}|\text{<BOS>, I})P(\text{<BOS>, I}) \\
+&=P(\text{<EOS>}|\text{<BOS>, I, love, to, play})P(\text{play}|\text{<BOS>, I, love, to})P(\text{to}|\text{<BOS>, I, love})P(\text{love}|\text{<BOS>, I})P(\text{I}|\text{<BOS>})P(\text{<BOS>}) \\
+\end{aligned}$$
+
 ### Redefine objective function
 
 $$\begin{gathered}
