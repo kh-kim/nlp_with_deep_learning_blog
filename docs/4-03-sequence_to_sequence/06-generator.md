@@ -24,7 +24,7 @@ generator
 
 $$\begin{gathered}
 \hat{y}_{1:n}=\text{softmax}(h_{1:n}^\text{dec}\cdot{W}_\text{gen}), \\
-\text{where }h_{1:n}^\text{dec}\in\mathbb{R}^{\text{batch\_size}\times{n}\times\text{hidden\_size}}\text{ and }W_\text{gen}\in\mathbb{R}^{\text{hidden\_size}\times|V|}.
+\text{where }h_{1:n}^\text{dec}\in\mathbb{R}^{\text{batch}\_\text{size}\times{n}\times\text{hidden}\_\text{size}}\text{ and }W_\text{gen}\in\mathbb{R}^{\text{hidden}\_\text{size}\times|V|}.
 \end{gathered}$$
 
 ## Loss Function
