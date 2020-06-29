@@ -17,7 +17,7 @@ y_{1:n}=\text{argmax }P(\text{y}|x;\theta) \\
 \end{gathered}$$
 
 $$\begin{aligned}
-\hat{y}&={\underset{y\in\mathcal{Y}}\text{argmax}}P(y|x) \\
-&={\underset{y\in\mathcal{Y}}\text{argmax}}\frac{P(y|x)P(y)}{P(x)} \\
-&={\underset{y\in\mathcal{Y}}\text{argmax}}P(y|x)P(y)
+\hat{y}&={\underset{y\in\mathcal{Y}}{\text{argmax}}}P(y|x) \\
+&={\underset{y\in\mathcal{Y}}{\text{argmax}}}\frac{P(y|x)P(y)}{P(x)} \\
+&={\underset{y\in\mathcal{Y}}{\text{argmax}}}P(y|x)P(y)
 \end{aligned}$$
