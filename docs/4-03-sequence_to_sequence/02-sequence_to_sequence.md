@@ -22,3 +22,5 @@ $$\begin{gathered}
 \mathcal{L}(\theta)=-\sum_{i=1}^N{\sum_{j=1}^n{\log{P(y^i_{j}|x^i,y_{<j}^i;\theta)}}} \\
 \theta\leftarrow\theta-\alpha\nabla_{\theta}\mathcal{L(\theta)} \\
 \end{gathered}$$
+
+## Review: Autoencoders
