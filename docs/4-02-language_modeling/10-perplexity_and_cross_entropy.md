@@ -17,7 +17,7 @@ $$\begin{aligned}
 
 $$\begin{aligned}
 H(P,P_\theta)&=-\mathbb{E}_{x_{1:n}\sim{P}}[\log{P(x_{1:n};\theta)}] \\
-&\approx-\frac{1}{n}\sum_{x_{1:n}\in\mathcal{X}}{P(x_{1:n})\log{P(x_{1:n};\theta)}} \\
+&\approx-\frac{1}{n}\sum_{x_{1:n}\in\mathcal{X}}{P(x_{1:n})\log{P(x_{1:n};\theta)}}\text{, defined as per-word entropy} \\
 &\approx-\frac{1}{n\times{N}}\sum_{i=1}^N\log{P(x_{1:n}^i;\theta)}\text{, by Monte-carlo} \\
 &\approx-\frac{1}{n}\log{P(x_{1:n};\theta)}\text{, where }N=1 \\
 &\approx-\frac{1}{n}\sum_{i=1}^n{\log{P(x_i|x_{<i};\theta)}} \\
