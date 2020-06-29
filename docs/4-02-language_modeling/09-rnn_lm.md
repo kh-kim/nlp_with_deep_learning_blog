@@ -27,7 +27,7 @@ $$\begin{gathered}
 \begin{aligned}
 f(x_{t-1},h_{t-1})&=\text{softmax}(\text{RNN}(\text{emb}(x_{t-1}),h_{t-1})\cdot{W})\text{, where }W\in\mathbb{R}^{\text{hidden_size}\times|V|} \\
 &=\text{softmax}(h_t\cdot{W})\text{, where }h_t\in\mathbb{R}^{\text{batch_size}\times\text{hidden_size}} \\
-&=\hat{x}_t
+&=\hat{x}_t,
 \end{aligned} \\
-\text{where }\hat{x}_t\text{ is a probability distribution that }P(\cdot|x_{<t};\theta).
+\text{where }\hat{x}_t\text{ is a probability distribution that }P(\cdot|x_{<t};\theta)\text{, and }x_0=\text{<BOS>}.
 \end{gathered}$$
