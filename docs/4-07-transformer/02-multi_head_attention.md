@@ -2,7 +2,7 @@
 layout: default
 title: Multi-head Attention
 parent: Transformer
-nav_order: 02
+nav_order: 4-07-02
 ---
 
 # Multi-head Attention

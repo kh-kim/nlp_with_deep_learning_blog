@@ -2,7 +2,7 @@
 layout: default
 title: Introduction to Beam Search
 parent: Beam Search
-nav_order: 01
+nav_order: 4-06-01
 ---
 
 # Beam Search 소개
