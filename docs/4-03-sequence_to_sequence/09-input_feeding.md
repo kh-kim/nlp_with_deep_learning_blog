@@ -35,7 +35,7 @@ h_t^\text{dec}=\text{RNN}_\text{dec}([\text{emb}_\text{dec}(y_{t-1});\tilde{h}_{
 ### Attention
 
 $$\begin{gathered}
-w=\text{softmax}(h_t^\text{dec}\cdot{W_\text{a}}\cdot{h_{1:m}^\text{enc}}^T) \\
+w=\text{softmax}(h_t^\text{dec}\cdot{W_\text{a}}\cdot{h_{1:m}^\text{enc}}^\intercal) \\
 c=w\cdot{h_{1:m}^\text{enc}}, \\
 \text{where }W_\text{a}\in\mathbb{R}^{\text{hidden}\_\text{size}\times\text{hidden}\_\text{size}}.
 \end{gathered}$$
@@ -52,7 +52,11 @@ $$\begin{gathered}
 
 $$\begin{aligned}
 \mathcal{L}(\theta)&=-\sum_{i=1}^N{\sum_{t=1}^n{\log{P}(y_t^i|x^i,y_{<t}^i;\theta)}} \\
-&=-\sum_{i=1}^N{\sum_{t=1}^n{{y_t^i}^T\cdot\log{\hat{y_t}^i}}}
+&=-\sum_{i=1}^N{
+    \sum_{t=1}^n{
+        {y_t^i}^\intercal\cdot\log{\hat{y_t}^i}
+    }
+}
 \end{aligned}$$
 
 $$
