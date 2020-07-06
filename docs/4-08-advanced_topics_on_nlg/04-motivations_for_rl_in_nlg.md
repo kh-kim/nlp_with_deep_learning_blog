@@ -13,7 +13,18 @@ nav_order: 4-08-04
 
 ### Generative Adversarial Networks (GAN)
 
-$$GAN LOSS$$
+$$\begin{gathered}
+\underset{G\in\mathcal{G}}{\min}\underset{D\in\mathcal{D}}{\max}\mathcal{L}(D,G)
+=\mathbb{E}_{x\sim{p_\text{real}(\text{x})}}\Big[
+    \log{D(x)}
+\Big]
++\mathbb{E}_{z\sim{p_z(\text{z})}}\Big[
+    \log{\big(
+        1-D\circ{G(z)}
+    \big)}
+\Big], \\
+\text{where }G\text{ is generator and }D\text{ is discriminator}.
+\end{gathered}$$
 
 ## Discrapency between Training Objective and Real Objective
 
