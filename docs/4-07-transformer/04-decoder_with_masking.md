@@ -34,7 +34,7 @@ h_{0,1:n}=\text{emb}(y_{0:n-1})+\text{pos}(0,n-1) \\
 
 $$\begin{gathered}
 \tilde{h}_{i,1:n}^\text{dec}=\text{LayerNorm}(\text{Multihead}_i(Q,K,V)+h_{i-1,1:n}^\text{dec}), \\
-\text{where }Q=\tilde{h}_{i,1:n}^\text{dec}\text{ and }K=V=h_{\ell,1:m}^\text{enc}.
+\text{where }Q=\tilde{h}_{i,1:n}^\text{dec}\text{ and }K=V=h_{\ell,1:m}^\text{dec}.
 \end{gathered}$$
 
 ##### Masking
@@ -45,13 +45,20 @@ $$\begin{gathered}
 \text{FFN}(h_{i,t})=\text{ReLU}(h_{i,t}\cdot{W_i^1})\cdot{W}_i^2 \\
 \text{where }W_i^1\in\mathbb{R}^{d_\text{model}\times{d_\text{ff}}}\text{ and }W_i^2\in\mathbb{R}^{d_\text{ff}\times{d_\text{model}}}. \\
 \\
-h_{i,1:m}^\text{enc}=\text{LayerNorm}([\text{FFN}(\tilde{h}_{i,1}^\text{enc});\cdots;\text{FFN}(\tilde{h}_{i,m}^\text{enc})]+\tilde{h}_{i,1:m})
+h_{i,1:m}^\text{dec}=\text{LayerNorm}([\text{FFN}(\tilde{h}_{i,1}^\text{dec});\cdots;\text{FFN}(\tilde{h}_{i,m}^\text{dec})]+\tilde{h}_{i,1:m})
 \end{gathered}$$
 
 ### Decoder
 
 $$\begin{gathered}
-h_{\ell_\text{enc},1:m}^\text{enc}=\text{Block}_\text{enc}(h_{\ell_\text{enc}-1,1:m}^\text{enc}) \\
+h_{\ell_\text{dec},1:m}^\text{dec}=\text{Block}_\text{dec}(h_{\ell_\text{dec}-1,1:m}^\text{dec}) \\
 \cdots \\
-h_{1,1:m}^\text{enc}=\text{Block}_\text{enc}(h_{0,1:m}^\text{enc}) \\
+h_{1,1:m}^\text{dec}=\text{Block}_\text{dec}(h_{0,1:m}^\text{dec}) \\
+\end{gathered}$$
+
+### Generator
+
+$$\begin{gathered}
+\hat{y}_{1:n}=\text{softmax}(h_{\ell_\text{dec},1:m}^\text{dec}\cdot{W}_\text{gen}), \\
+\text{where }h_{\ell_\text{dec},1:m}^\text{dec}\in\mathbb{R}^{\text{batch}\_\text{size}\times{n}\times\text{hidden}\_\text{size}}\text{ and }W_\text{gen}\in\mathbb{R}^{\text{hidden}\_\text{size}\times|V|}.
 \end{gathered}$$
