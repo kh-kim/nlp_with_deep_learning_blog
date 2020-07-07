@@ -51,18 +51,18 @@ Q(\hat{y}|x^i;\theta,\alpha)=\frac{P(\hat{y}|x^i;\theta)^\alpha}{\sum_{y'\in\mat
 $$\begin{aligned}
 \nabla_\theta\tilde{\mathcal{R}}(\theta)
 &=\alpha\sum_{i=1}^N{
-    \mathbb{E}_{\hat{y}\sim{P(\text{y}|x^i;\theta,\alpha)}}\Big[
+    \mathbb{E}_{\hat{y}\sim{P(\text{y}|x^i;\theta)^\alpha}}\Big[
         \frac{\nabla_\theta{P(\hat{y}|x^i;\theta)}}{P(\hat{y}|x^i;\theta)}\times\big(
-            \Delta(\hat{y},y^i)-\mathbb{E}_{y'\sim{P(\text{y}|x^i;\theta,\alpha)}}[
+            \Delta(\hat{y},y^i)-\mathbb{E}_{y'\sim{P(\text{y}|x^i;\theta)^\alpha}}[
                 \Delta(y',y^i)
             ]
         \big)
     \Big]
 } \\
 &=\alpha\sum_{i=1}^N{
-    \mathbb{E}_{\hat{y}\sim{P(\text{y}|x^i;\theta,\alpha)}}\Big[
+    \mathbb{E}_{\hat{y}\sim{P(\text{y}|x^i;\theta)^\alpha}}\Big[
         \nabla_\theta\log{P(\hat{y}|x^i;\theta)}\times\big(
-            \Delta(\hat{y},y^i)-\mathbb{E}_{y'\sim{P(\text{y}|x^i;\theta,\alpha)}}[
+            \Delta(\hat{y},y^i)-\mathbb{E}_{y'\sim{P(\text{y}|x^i;\theta)^\alpha}}[
                 \Delta(y',y^i)
             ]
         \big)
@@ -74,9 +74,11 @@ $$\begin{aligned}
             \Delta(y^k,y^i)
         }
     \big)}
-}
+}\text{, where }\hat{y}\sim{P(\text{y}|x^i;\theta)^\alpha}.
 \end{aligned}$$
 
 $$
 \theta\leftarrow\theta-\alpha\nabla_\theta{\tilde{\mathcal{R}}(\theta)}
 $$
+
+## Evaluations
