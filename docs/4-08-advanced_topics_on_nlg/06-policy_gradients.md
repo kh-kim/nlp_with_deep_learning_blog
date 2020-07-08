@@ -83,7 +83,25 @@ G&\leftarrow\sum_{k=t+1}^T{
 \theta&\leftarrow\theta+\eta^\theta\gamma^t\delta\nabla_\theta{\log{\pi_\theta(a_t|s_t)}}
 \end{aligned}$$
 
+<!--
 ## Actor Critic
+
+$$
+\theta\leftarrow\theta+\eta{Q_{\pi_\theta}(s_t,a_t)}\nabla_\theta{\log{\pi_\theta}(a_t|s_t)}
+$$
+
+$$
+\theta\leftarrow\theta+\eta\big(
+    Q_{\pi_\theta}(s_t,a_t;\psi)-v_{\pi_\theta}(s_t;\phi)
+\big)\nabla_\theta{\log{\pi_\theta}(a_t|s_t)}
+$$
+
+$$
+\theta\leftarrow\theta+\eta\big(
+    r_{t+1}+\gamma{v_{\pi_\theta}(s_{t+1};\phi)}-v_{\pi_\theta}(s_t;\phi)
+\big)\nabla_\theta{\log{\pi_\theta}(a_t|s_t)}
+$$
+-->
 
 ## PG vs MLE
 
