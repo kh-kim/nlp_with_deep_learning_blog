@@ -24,7 +24,7 @@ $$\begin{gathered}
 \hat{\theta}=\underset{\theta\in\Theta}{\text{argmax }}\sum_{i=1}^N\log{p(y_i|x_i;\theta)} \\
 \\
 \mathcal{L}(\theta)=-\sum_{i=1}^N{\log{p(y_i|x_i;\theta)}} \\
-\theta\leftarrow\theta-\alpha\nabla_\theta\mathcal{L}(\theta) \\
+\theta\leftarrow\theta-\eta\nabla_\theta\mathcal{L}(\theta) \\
 \end{gathered}$$
 
 ## Consider as Gaussian

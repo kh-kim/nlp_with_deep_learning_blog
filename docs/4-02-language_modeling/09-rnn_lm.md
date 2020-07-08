@@ -17,17 +17,25 @@ $$\begin{gathered}
 
 $$\begin{gathered}
 \mathcal{L}(\theta)=-\sum_{i=1}^N{\sum_{j=1}^n{\log{P(x^i_{j}|x_{<j}^i;\theta)}}} \\
-\theta\leftarrow\theta-\alpha\nabla_{\theta}\mathcal{L(\theta)} \\
+\theta\leftarrow\theta-\eta\nabla_{\theta}\mathcal{L(\theta)}
 \end{gathered}$$
 
 $$\begin{gathered}
 \log{P(x_t|x_{<t};\theta)}=x_t^T\cdot\log{f_\theta(x_{t-1},h_{t-1})}, \\
-\text{where }x_t\text{ is one-hot vector, and }f_\theta\text{ is model with parameter }\theta. \\
-\\
-\begin{aligned}
-f(x_{t-1},h_{t-1})&=\text{softmax}(\text{RNN}(\text{emb}(x_{t-1}),h_{t-1})\cdot{W})\text{, where }W\in\mathbb{R}^{\text{hidden_size}\times|V|} \\
-&=\text{softmax}(h_t\cdot{W})\text{, where }h_t\in\mathbb{R}^{\text{batch_size}\times\text{hidden_size}} \\
-&=\hat{x}_t,
-\end{aligned} \\
-\text{where }\hat{x}_t\text{ is a probability distribution that }P(\cdot|x_{<t};\theta)\text{, and }x_0=\text{<BOS>}.
+\text{where }x_t\text{ is one-hot vector, and }f_\theta\text{ is model with parameter }\theta.
 \end{gathered}$$
+
+$$\begin{aligned}
+f(x_{t-1},h_{t-1})
+&=\text{softmax}(
+    \text{RNN}(
+        \text{emb}(x_{t-1}),h_{t-1}
+    )\cdot{W}
+)\text{, where }W\in\mathbb{R}^{\text{hidden}\_\text{size}\times|V|} \\
+&=\text{softmax}(h_t\cdot{W})\text{, where }h_t\in\mathbb{R}^{\text{batch}\_\text{size}\times\text{hidden}\_\text{size}} \\
+&=\hat{x}_t,
+\end{aligned}$$
+
+$$
+\text{where }\hat{x}_t\text{ is a probability distribution that }P(\cdot|x_{<t};\theta)\text{, and }x_0=\text{<BOS>}.
+$$

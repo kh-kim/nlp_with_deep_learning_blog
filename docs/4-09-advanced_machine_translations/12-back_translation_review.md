@@ -26,6 +26,14 @@ $$\begin{aligned}
 \log{P(y)}&=\log{\sum_{x\in\mathcal{X}}{P(x,y)}} \\
 &=\log{\sum_{x\in\mathcal{X}}{P(y|x)P(x)}} \\
 &=\log{\sum_{x\in\mathcal{X}}{\frac{P(y|x)P(x)}{P(x|y)}P(x|y)}} \\
+\end{aligned}$$
+
+### Jensen's Inequality
+
+$$\begin{aligned}
+\log{P(y)}&=\log{\sum_{x\in\mathcal{X}}{P(x,y)}} \\
+&=\log{\sum_{x\in\mathcal{X}}{P(y|x)P(x)}} \\
+&=\log{\sum_{x\in\mathcal{X}}{\frac{P(y|x)P(x)}{P(x|y)}P(x|y)}} \\
 &\ge\sum_{x\in\mathcal{X}}{
     P(x|y)\log{\frac{P(y|x)P(x)}{P(x|y)}}
 } \\
@@ -79,7 +87,7 @@ $$\begin{aligned}
 \end{aligned}$$
 
 $$
-\theta_{x\rightarrow{y}}\leftarrow\theta_{x\rightarrow{y}}-\alpha\nabla_{\theta_{x\rightarrow{y}}}\tilde{\mathcal{L}}(\theta_{x\rightarrow{y}})
+\theta_{x\rightarrow{y}}\leftarrow\theta_{x\rightarrow{y}}-\eta\nabla_{\theta_{x\rightarrow{y}}}\tilde{\mathcal{L}}(\theta_{x\rightarrow{y}})
 $$
 
 ## Evaluations

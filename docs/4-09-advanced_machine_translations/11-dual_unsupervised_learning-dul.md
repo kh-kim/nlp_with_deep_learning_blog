@@ -17,6 +17,24 @@ $$\begin{gathered}
 $$\begin{aligned}
 P(y)&=\mathbb{E}_{x\sim{P(\text{x})}}[P(y|x)] \\
 &=\sum_{x\in\mathcal{X}}P(y|x)P(x) \\
+\end{aligned}$$
+
+### Importance Sampling
+
+$$\begin{aligned}
+\mathbb{E}_{x\sim{p(\text{x})}}\big[f(x)\big]
+&=\int{f(x)p(x)}dx \\
+&=\int{\frac{f(x)p(x)}{q(x)}q(x)}dx \\
+&=\mathbb{E}_{x\sim{p(\text{x})}}\Big[
+    f(x)\frac{p(x)}{q(x)}
+\Big]
+\end{aligned}$$
+
+#### Intuition
+
+$$\begin{aligned}
+P(y)&=\mathbb{E}_{x\sim{P(\text{x})}}[P(y|x)] \\
+&=\sum_{x\in\mathcal{X}}P(y|x)P(x) \\
 &=\sum_{x\in\mathcal{X}}\frac{P(y|x)P(x)}{P(x|y)}P(x|y) \\
 &=\mathbb{E}_{x\sim{P(\text{x}|y)}}\Big[\frac{P(y|x)P(x)}{P(x|y)}\Big] \\
 &\approx\frac{1}{K}\sum_{k=1}^K{
@@ -40,7 +58,7 @@ $$\begin{gathered}
 \end{gathered}$$
 
 $$
-\theta_{x\rightarrow{y}}=\theta_{x\rightarrow{y}}-\alpha\nabla_{\theta_{x\rightarrow{y}}}\mathcal{L}(\theta_{x\rightarrow{y}})
+\theta_{x\rightarrow{y}}=\theta_{x\rightarrow{y}}-\eta\nabla_{\theta_{x\rightarrow{y}}}\mathcal{L}(\theta_{x\rightarrow{y}})
 $$
 
 ## Evaluations

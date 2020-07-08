@@ -78,7 +78,7 @@ $$\begin{aligned}
 \end{aligned}$$
 
 $$
-\theta\leftarrow\theta-\alpha\nabla_\theta{\tilde{\mathcal{R}}(\theta)}
+\theta\leftarrow\theta-\eta\nabla_\theta{\tilde{\mathcal{R}}(\theta)}
 $$
 
 ## Evaluations

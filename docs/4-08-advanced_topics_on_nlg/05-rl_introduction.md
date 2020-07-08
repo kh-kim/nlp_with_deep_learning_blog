@@ -57,3 +57,22 @@ G_t&=r_{t+1}+\gamma{r_{t+2}}+\gamma^2{r_{t+3}}+\cdots \\
 $$
 \pi(a|s)=P(A_t=a|S_t=s)
 $$
+
+## Value Function
+
+$$
+v_\pi(s)=\mathbb{E}_\pi[G_t|S_t=s]=\mathbb{E}_\pi\Big[\sum_{k=0}^\infty{
+    \gamma^k{r_{t+k+1}\big|S_t=s}
+}\Big]\text{, }\forall{s}\in\mathcal{S}.
+$$
+
+## Action-Value Function (Q-Function)
+
+$$\begin{gathered}
+Q_\pi(s,a)=\mathbb{E}_\pi[G_t|S_t=s,A_t=a]=\mathbb{E}_\pi\Big[
+    \sum_{k=0}^\infty{
+        \gamma^k{r_{t+k+1}}\big|S_t=s,A_t=a
+    }
+\Big], \\
+\forall{s}\in\mathcal{S}\text{ and }\forall{a}\in\mathcal{A}.
+\end{gathered}$$

@@ -66,5 +66,5 @@ $$\begin{aligned}
 \end{aligned}$$
 
 $$
-\theta\leftarrow\theta-\alpha\nabla_\theta\mathcal{L}(\theta)
+\theta\leftarrow\theta-\eta\nabla_\theta\mathcal{L}(\theta)
 $$
