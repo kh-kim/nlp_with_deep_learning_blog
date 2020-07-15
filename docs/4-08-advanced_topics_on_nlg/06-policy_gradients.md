@@ -11,14 +11,14 @@ nav_order: 4-08-06
 
 ## Useful Trick
 
-$$\begin{gathered}
-\begin{aligned}
+$$\begin{aligned}
 \nabla_\theta{P(x;\theta)}&={P(x;\theta)}\frac{\nabla_\theta{P(x;\theta)}}{{P(x;\theta)}} \\
 &={P(x;\theta)}\nabla_\theta\log{{P(x;\theta)}}
-\end{aligned} \\
-\\
-\nabla_\theta\log{{P(x;\theta)}}=\frac{\nabla_\theta{P(x;\theta)}}{{P(x;\theta)}} \\
-\end{gathered}$$
+\end{aligned}$$
+
+$$
+\nabla_\theta\log{{P(x;\theta)}}=\frac{\nabla_\theta{P(x;\theta)}}{{P(x;\theta)}}
+$$
 
 ## Policy Gradient Theorem
 
