@@ -18,7 +18,7 @@ $$\begin{aligned}
 \end{aligned}$$
 
 $$
-\nabla_\theta\log{{P(x;\theta)}}=\frac{\nabla_\theta{P(x;\theta)}}{P(x;\theta)}
+\nabla_\theta\log{P(x;\theta)}=\frac{\nabla_\theta{P(x;\theta)}}{P(x;\theta)}
 $$
 
 ## Policy Gradient Theorem
