@@ -32,6 +32,6 @@ P(w_t|w_{<t})&\approx\frac{\text{C}(w_{1:t})}{\text{C}(w_{1:t-1})} \\
 if we more generalize this,
 
 $$\begin{gathered}
-P(w_t|w_{<t})\approx\frac{\text{C}(w_{1:t})+1}{\text{C}(w_{1:t-1})+|V|}, \\
-\text{where }|V|\text{ is a size of vocabulary.}
+P(w_t|w_{<t})\approx\frac{\text{C}(w_{1:t})+m\times{P(w_t)}}{\text{C}(w_{1:t-1})+m}, \\
+\text{where }P(w_t)\text{ is unigram probability.}
 \end{gathered}$$
