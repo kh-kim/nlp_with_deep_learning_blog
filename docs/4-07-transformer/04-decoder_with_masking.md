@@ -45,7 +45,7 @@ $$\begin{gathered}
 \text{FFN}(h_{i,t})=\text{ReLU}(h_{i,t}\cdot{W_i^1})\cdot{W}_i^2 \\
 \text{where }W_i^1\in\mathbb{R}^{d_\text{model}\times{d_\text{ff}}}\text{ and }W_i^2\in\mathbb{R}^{d_\text{ff}\times{d_\text{model}}}. \\
 \\
-h_{i,1:m}^\text{dec}=\text{LayerNorm}([\text{FFN}(\tilde{h}_{i,1}^\text{dec});\cdots;\text{FFN}(\tilde{h}_{i,m}^\text{dec})]+\tilde{h}_{i,1:m})
+h_{i,1:m}^\text{dec}=\text{LayerNorm}([\text{FFN}(\tilde{h}_{i,1}^\text{dec});\cdots;\text{FFN}(\tilde{h}_{i,m}^\text{dec})]+\tilde{h}_{i,1:m}^\text{dec})
 \end{gathered}$$
 
 ### Decoder

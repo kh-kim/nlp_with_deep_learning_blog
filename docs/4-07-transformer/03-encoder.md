@@ -25,7 +25,7 @@ $$\hat{y}_{1:n}=f(x_{1:m}:\theta)$$
 
 $$\begin{gathered}
 h_{0,1:m}=\text{emb}(x_{1:m})+\text{pos}(1,m) \\
-\tilde{h}_{i,1:m}^\text{enc}=\text{LayerNorm}(\text{Multihead}_i(Q,K,V)+h_{i-1,1:m}\text{enc}), \\
+\tilde{h}_{i,1:m}^\text{enc}=\text{LayerNorm}(\text{Multihead}_i(Q,K,V)+h_{i-1,1:m}^\text{enc}), \\
 \text{where }Q=K=V=h_{i-1,1:m}^\text{enc}. \\
 \end{gathered}$$
 
@@ -33,7 +33,7 @@ $$\begin{gathered}
 \text{FFN}(h_{i,t})=\text{ReLU}(h_{i,t}\cdot{W_i^1})\cdot{W}_i^2 \\
 \text{where }W_i^1\in\mathbb{R}^{d_\text{model}\times{d_\text{ff}}}\text{ and }W_i^2\in\mathbb{R}^{d_\text{ff}\times{d_\text{model}}}. \\
 \\
-h_{i,1:m}^\text{enc}=\text{LayerNorm}([\text{FFN}(\tilde{h}_{i,1}^\text{enc});\cdots;\text{FFN}(\tilde{h}_{i,m}^\text{enc})]+\tilde{h}_{i,1:m})
+h_{i,1:m}^\text{enc}=\text{LayerNorm}([\text{FFN}(\tilde{h}_{i,1}^\text{enc});\cdots;\text{FFN}(\tilde{h}_{i,m}^\text{enc})]+\tilde{h}_{i,1:m}^\text{enc})
 \end{gathered}$$
 
 ### Encoder
