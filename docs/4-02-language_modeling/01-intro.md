@@ -18,6 +18,6 @@ y_{1:n}=\text{argmax }P(\text{y}|x;\theta) \\
 
 $$\begin{aligned}
 \hat{y}&={\underset{y\in\mathcal{Y}}{\text{argmax}}}P(y|x) \\
-&={\underset{y\in\mathcal{Y}}{\text{argmax}}}\frac{P(y|x)P(y)}{P(x)} \\
-&={\underset{y\in\mathcal{Y}}{\text{argmax}}}P(y|x)P(y)
+&={\underset{y\in\mathcal{Y}}{\text{argmax}}}\frac{P(x|y)P(y)}{P(x)} \\
+&={\underset{y\in\mathcal{Y}}{\text{argmax}}}P(x|y)P(y)
 \end{aligned}$$
