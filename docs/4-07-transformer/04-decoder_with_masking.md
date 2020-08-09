@@ -23,7 +23,7 @@ x^i=\{x^i_1,\cdots,x^i_m\}\text{ and }y^i=\{y_0^i,y_1^i,\cdots,y_n^i\}, \\
 #### Self-Attention with Masking
 
 $$\begin{gathered}
-h_{0,1:n}=\text{emb}(y_{0:n-1})+\text{pos}(0,n-1) \\
+h_{0,1:n}^\text{dec}=\text{emb}(y_{0:n-1})+\text{pos}(0,n-1) \\
 \tilde{h}_{i,1:n}^\text{dec}=\text{LayerNorm}(\text{Multihead}_i(Q,K,V)+h_{i-1,1:n}^\text{dec}), \\
 \text{where }Q=K=V=h_{i-1,1:n}^\text{dec}. \\
 \end{gathered}$$

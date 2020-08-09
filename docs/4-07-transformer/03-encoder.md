@@ -24,7 +24,7 @@ $$\hat{y}_{1:n}=f(x_{1:m}:\theta)$$
 ### Encoder Block
 
 $$\begin{gathered}
-h_{0,1:m}=\text{emb}(x_{1:m})+\text{pos}(1,m) \\
+h_{0,1:m}^\text{enc}=\text{emb}(x_{1:m})+\text{pos}(1,m) \\
 \tilde{h}_{i,1:m}^\text{enc}=\text{LayerNorm}(\text{Multihead}_i(Q,K,V)+h_{i-1,1:m}^\text{enc}), \\
 \text{where }Q=K=V=h_{i-1,1:m}^\text{enc}. \\
 \end{gathered}$$
