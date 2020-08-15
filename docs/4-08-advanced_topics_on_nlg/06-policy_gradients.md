@@ -11,15 +11,15 @@ nav_order: 4-08-06
 
 ## Useful Trick
 
-$$
-\nabla_\theta\log{P(x;\theta)}=\frac{\nabla_\theta{P(x;\theta)}}{P(x;\theta)}
-$$
-
-$$\begin{aligned}
+$$\begin{gathered}
+\nabla_\theta\log{P(x;\theta)}=\frac{\nabla_\theta{P(x;\theta)}}{P(x;\theta)} \\
+\\
+\begin{aligned}
 \nabla_\theta{P(x;\theta)}
 &={P(x;\theta)}\frac{\nabla_\theta{P(x;\theta)}}{P(x;\theta)} \\
 &={P(x;\theta)}\nabla_\theta\log{P(x;\theta)}
-\end{aligned}$$
+\end{aligned}\\
+\end{gathered}$$
 
 ## Policy Gradient Theorem
 
@@ -32,29 +32,24 @@ J(\theta)&=\mathbb{E}_{\pi_\theta}[r]=v_\theta(s_0) \\
 }
 \end{aligned}$$
 
-$$
-\hat{\theta}=\underset{\theta\in\Theta}{\text{argmax }}J(\theta)
-$$
-
-$$
+$$\begin{gathered}
+\hat{\theta}=\underset{\theta\in\Theta}{\text{argmax }}J(\theta) \\
 \theta_{t+1}=\theta_t+\eta\nabla_\theta{J(\theta)}
-$$
+\end{gathered}$$
 
 by Policy Gradient Theorem,
 
-$$
+$$\begin{gathered}
 \nabla_\theta{J(\theta)}\approx\mathbb{E}_{\pi_\theta}\big[
     \nabla_\theta{\log{\pi_\theta(a|s)}}Q_{\pi_\theta}(s,a)
-\big]
-$$
-
-$$
+\big] \\
+\\
 \theta\leftarrow\theta+\eta\sum_{s\in\mathcal{S}}{
     \sum_{a\in\mathcal{A}}{
         Q_{\pi_\theta}(s,a)\nabla_\theta\log{\pi_\theta(a|s)}
     }
 }
-$$
+\end{gathered}$$
 
 ## REINFORCE
 
