@@ -21,27 +21,19 @@ nav_order: 4-08-05
 
 ### Episode
 
-$$
-\text{episode}=\{s_0,a_0,r_1,s_1,a_1,r_2,s_2,a_2,r_3,s_3,a_3,\cdots\}
-$$
+$$\text{episode}=\{s_0,a_0,r_1,s_1,a_1,r_2,s_2,a_2,r_3,s_3,a_3,\cdots\}$$
 
 ## Markov Decision Process (MDP)
 
-$$
-P(s_t|s_{t-1},a)
-$$
+$$P(s_t|s_{t-1},a)$$
 
-$$
-\text{reward}=R(s,a)
-$$
+$$\text{reward}=R(s,a)$$
 
 ## Objective
 
 ### Cumulative Reward
 
-$$
-G_t=r_{t+1}+r_{t+2}+\cdots+r_T
-$$
+$$G_t=r_{t+1}+r_{t+2}+\cdots+r_T$$
 
 #### Discount Factor
 
@@ -54,17 +46,13 @@ G_t&=r_{t+1}+\gamma{r_{t+2}}+\gamma^2{r_{t+3}}+\cdots \\
 
 ## Policy
 
-$$
-\pi(a|s)=P(A_t=a|S_t=s)
-$$
+$$\pi(a|s)=P(A_t=a|S_t=s)$$
 
 ## Value Function
 
-$$
-v_\pi(s)=\mathbb{E}_\pi[G_t|S_t=s]=\mathbb{E}_\pi\Big[\sum_{k=0}^\infty{
+$$v_\pi(s)=\mathbb{E}_\pi[G_t|S_t=s]=\mathbb{E}_\pi\Big[\sum_{k=0}^\infty{
     \gamma^k{r_{t+k+1}\big|S_t=s}
-}\Big]\text{, }\forall{s}\in\mathcal{S}.
-$$
+}\Big]\text{, }\forall{s}\in\mathcal{S}.$$
 
 ## Action-Value Function(Q-Function)
 
