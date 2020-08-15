@@ -66,7 +66,7 @@ v_\pi(s)=\mathbb{E}_\pi[G_t|S_t=s]=\mathbb{E}_\pi\Big[\sum_{k=0}^\infty{
 }\Big]\text{, }\forall{s}\in\mathcal{S}.
 $$
 
-## Action-Value Function (Q-Function)
+## Action-Value Function(Q-Function)
 
 $$\begin{gathered}
 Q_\pi(s,a)=\mathbb{E}_\pi[G_t|S_t=s,A_t=a]=\mathbb{E}_\pi\Big[
