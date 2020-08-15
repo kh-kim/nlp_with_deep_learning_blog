@@ -21,19 +21,25 @@ nav_order: 4-08-05
 
 ### Episode
 
-$$\text{episode}=\{s_0,a_0,r_1,s_1,a_1,r_2,s_2,a_2,r_3,s_3,a_3,\cdots\}$$
+$$\begin{gathered}
+\text{episode}=\{s_0,a_0,r_1,s_1,a_1,r_2,s_2,a_2,r_3,s_3,a_3,\cdots\}
+\end{gathered}$$
 
 ## Markov Decision Process (MDP)
 
-$$P(s_t|s_{t-1},a)$$
-
-$$\text{reward}=R(s,a)$$
+$$\begin{gathered}
+P(s_t|s_{t-1},a) \\
+\\
+\text{reward}=R(s,a)
+\end{gathered}$$
 
 ## Objective
 
 ### Cumulative Reward
 
-$$G_t=r_{t+1}+r_{t+2}+\cdots+r_T$$
+$$\begin{gathered}
+G_t=r_{t+1}+r_{t+2}+\cdots+r_T
+\end{gathered}$$
 
 #### Discount Factor
 
@@ -46,7 +52,9 @@ G_t&=r_{t+1}+\gamma{r_{t+2}}+\gamma^2{r_{t+3}}+\cdots \\
 
 ## Policy
 
-$$\pi(a|s)=P(A_t=a|S_t=s)$$
+$$\begin{gathered}
+\pi(a|s)=P(A_t=a|S_t=s)
+\end{gathered}$$
 
 ## Value Function
 
