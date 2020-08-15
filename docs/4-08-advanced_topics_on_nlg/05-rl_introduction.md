@@ -50,9 +50,14 @@ $$\pi(a|s)=P(A_t=a|S_t=s)$$
 
 ## Value Function
 
-$$v_\pi(s)=\mathbb{E}_\pi[G_t|S_t=s]=\mathbb{E}_\pi\Big[\sum_{k=0}^\infty{
+$$\begin{gathered}
+\begin{aligned}
+v_\pi(s)&=\mathbb{E}_\pi[G_t|S_t=s] \\
+&=\mathbb{E}_\pi\Big[\sum_{k=0}^\infty{
     \gamma^k{r_{t+k+1}\big|S_t=s}
-}\Big]\text{, }\forall{s}\in\mathcal{S}.$$
+}\Big]\text{, }\end{aligned} \\
+\forall{s}\in\mathcal{S}.
+\end{gathered}$$
 
 ## Action-Value Function(Q-Function)
 
