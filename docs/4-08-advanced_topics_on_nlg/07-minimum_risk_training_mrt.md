@@ -9,11 +9,10 @@ nav_order: 4-08-07
 
 ## Equations
 
-$$
-\mathcal{D}=\{x^i,y^i\}_{i=1}^N
-$$
-
-$$\begin{aligned}
+$$\begin{gathered}
+\mathcal{D}=\{x^i,y^i\}_{i=1}^N \\
+\\
+\begin{aligned}
 \mathcal{R}(\theta)&=\sum_{i=1}^N{
     \mathbb{E}_{\hat{y}\sim{P(\text{y}|x^i;\theta)}}[\Delta(\hat{y},y^i)]
 } \\
@@ -22,11 +21,10 @@ $$\begin{aligned}
         P(\hat{y}|x^i;\theta)\Delta(\hat{y},y^i)
     }
 }
-\end{aligned}$$
-
-$$
+\end{aligned} \\
+\\
 \hat{\theta}_\text{MRT}=\underset{\theta\in\Theta}{\text{argmin }}\mathcal{R}(\theta)
-$$
+\end{gathered}$$
 
 $$\begin{gathered}
 \begin{aligned}
@@ -48,7 +46,8 @@ Q(\hat{y}|x^i;\theta,\alpha)=\frac{P(\hat{y}|x^i;\theta)^\alpha}{\sum_{y'\in\mat
 }}.
 \end{gathered}$$
 
-$$\begin{aligned}
+$$\begin{gathered}
+\begin{aligned}
 \nabla_\theta\tilde{\mathcal{R}}(\theta)
 &=\alpha\sum_{i=1}^N{
     \mathbb{E}_{\hat{y}\sim{P(\text{y}|x^i;\theta)^\alpha}}\Big[
@@ -75,10 +74,9 @@ $$\begin{aligned}
         }
     \big)}
 }\text{, where }\hat{y}\sim{P(\text{y}|x^i;\theta)^\alpha}.
-\end{aligned}$$
-
-$$
+\end{aligned} \\
+\\
 \theta\leftarrow\theta-\eta\nabla_\theta{\tilde{\mathcal{R}}(\theta)}
-$$
+\end{gathered}$$
 
 ## Evaluations
