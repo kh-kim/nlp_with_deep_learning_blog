@@ -60,13 +60,13 @@ $$\begin{aligned}
 } \\
 &\approx-\sum_{n=1}^N{
     \log{P(y^n|x^n;\theta_{x\rightarrow{y}})}
-}-\frac{1}{K}\sum_{s=1}^S{
-    \sum_{k=1}^K{
+}-\sum_{s=1}^S{\Bigg(
+    \frac{1}{K}\sum_{k=1}^K{
         \log{P(y^s|x_k^s;\theta_{x\rightarrow{y}})}
     }-\text{KL}\big(
         P(\text{x}|y^s;\theta_{y\rightarrow{x}})|P(\text{x})
     \big)
-}\text{, where }x_k^s\sim{P(\text{x}|y^s;\theta_{y\rightarrow{x}})} \\
+}\Bigg)\text{, where }x_k^s\sim{P(\text{x}|y^s;\theta_{y\rightarrow{x}})} \\
 &=\tilde{\mathcal{L}}(\theta_{x\rightarrow{y}})
 \end{aligned}$$
 
