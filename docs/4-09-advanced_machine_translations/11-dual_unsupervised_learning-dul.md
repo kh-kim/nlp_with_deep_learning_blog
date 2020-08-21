@@ -25,7 +25,7 @@ $$\begin{aligned}
 \mathbb{E}_{x\sim{p(\text{x})}}\big[f(x)\big]
 &=\int{f(x)p(x)}dx \\
 &=\int{\frac{f(x)p(x)}{q(x)}q(x)}dx \\
-&=\mathbb{E}_{x\sim{p(\text{x})}}\Big[
+&=\mathbb{E}_{x\sim{q(\text{x})}}\Big[
     f(x)\frac{p(x)}{q(x)}
 \Big]
 \end{aligned}$$
