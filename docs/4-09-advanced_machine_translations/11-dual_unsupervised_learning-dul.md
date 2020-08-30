@@ -14,10 +14,36 @@ $$\begin{gathered}
 \mathcal{M}=\{y^s\}_{s=1}^S
 \end{gathered}$$
 
+### Marginal Distribution
+
 $$\begin{aligned}
 P(y)&=\mathbb{E}_{x\sim{P(\text{x})}}[P(y|x)] \\
 &=\sum_{x\in\mathcal{X}}P(y|x)P(x) \\
 \end{aligned}$$
+
+### New Objective
+
+$$\begin{gathered}
+\hat{\theta}_{x\rightarrow{y}}=\underset{\theta_{x\rightarrow{y}}\in\Theta}{\text{argmin}}{
+    \sum_{i=1}^N{
+        \ell\big(
+            f(x^i;\theta_{x\rightarrow{y}}),y^i)
+        \big)
+    }
+} \\
+\text{s.t. }P(y^i)=\sum_{x\in\mathcal{X}}{P(y^i|x^i)P(x^i)}.
+\end{gathered}$$
+
+$$\begin{gathered}
+\mathcal{L}(\theta_{x\rightarrow{y}})=-\sum_{n=1}^N{
+    \log{P(y^n|x^n;\theta_{x\rightarrow{y}})}
+}+\lambda\sum_{s=1}^S{
+    \Big\|\log{\hat{P}(y^s)}-\log{\frac{1}{K}\sum_{k=1}^K{
+        P(y^s|x_k;\theta_{y\rightarrow{x}})
+    }}\Big\|_2^2
+}, \\
+\text{where }x_k\sim{P(\text{x})}.
+\end{gathered}$$
 
 ### Importance Sampling
 
@@ -31,6 +57,9 @@ $$\begin{aligned}
 \end{aligned}$$
 
 #### Intuition
+
+
+### Re-write Objective
 
 $$\begin{aligned}
 P(y)&=\mathbb{E}_{x\sim{P(\text{x})}}[P(y|x)] \\
