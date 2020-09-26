@@ -9,9 +9,9 @@ nav_order: 4-08-09
 
 ## Equations
 
-$$
-\mathcal{D}=\{x^i,y^i\}_{i=1}^N
-$$
+$$\begin{gathered}
+\mathcal{D}=\{x^i,y^i\}_{i=1}^N \\
+\end{gathered}$$
 
 $$\begin{gathered}
 \nabla_\theta\mathcal{L}(\theta)=\nabla_\theta\Big(
@@ -26,6 +26,6 @@ $$\begin{gathered}
 \text{where }\hat{y}^i\sim{P(\cdot|x^i;\theta)}.
 \end{gathered}$$
 
-$$
+$$\begin{gathered}
 \theta\leftarrow\theta-\eta\nabla_\theta\mathcal{L}(\theta)
-$$
+\end{gathered}$$
