@@ -29,3 +29,10 @@ $$\begin{gathered}
 $$\begin{gathered}
 \theta\leftarrow\theta-\eta\nabla_\theta\mathcal{L}(\theta)
 \end{gathered}$$
+
+$$\begin{gathered}
+\log{P(\hat{y}|x;\theta)}=\sum_{t=1}^{\tilde{m}}{
+    \hat{y}_t^\intercal\cdot\log{f_\theta(x,\hat{y}_{<t})}
+}
+\end{gathered}$$
+
