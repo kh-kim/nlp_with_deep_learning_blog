@@ -22,10 +22,10 @@ $$\begin{gathered}
 
 $$\begin{gathered}
 \theta_{x\rightarrow{y}}\leftarrow\theta_{x\rightarrow{y}}-\eta\nabla_{\theta_{x\rightarrow{y}}}\mathcal{L}(\theta_{x\rightarrow{y}}) \\
-\mathcal{L}(\theta_{x\rightarrow{y}})=-\sum_{i=1}^N{
+\mathcal{L}(\theta_{x\rightarrow{y}})=\sum_{i=1}^N{
     \bigg(
-        \log{P(y_i|x_i;\theta_{x\rightarrow{y}})}
-        -\lambda\times\Big(
+        -\log{P(y_i|x_i;\theta_{x\rightarrow{y}})}
+        +\lambda\times\Big(
             \big(
                 \log{P(x_i;\phi)}+\log{P(y_i|x_i;\theta_{x\rightarrow{y}})}
             \big)
@@ -37,10 +37,10 @@ $$\begin{gathered}
 } \\
 \\
 \theta_{y\rightarrow{x}}\leftarrow\theta_{y\rightarrow{x}}-\eta\nabla_{\theta_{y\rightarrow{x}}}\mathcal{L}(\theta_{y\rightarrow{x}}) \\
-\mathcal{L}(\theta_{y\rightarrow{x}})=-\sum_{i=1}^N{
+\mathcal{L}(\theta_{y\rightarrow{x}})=\sum_{i=1}^N{
     \bigg(
-        \log{P(x_i|y_i;\theta_{y\rightarrow{x}})}
-        -\lambda\times\Big(
+        -\log{P(x_i|y_i;\theta_{y\rightarrow{x}})}
+        +\lambda\times\Big(
             \big(
                 \log{P(x_i;\phi)}+\log{P(y_i|x_i;\theta_{x\rightarrow{y}})}
             \big)
