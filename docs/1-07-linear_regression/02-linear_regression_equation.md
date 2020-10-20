@@ -9,7 +9,7 @@ nav_order: 1-07-02
 
 $$\begin{gathered}
 \mathcal{D}=\{(x_i, y_i)\}_{i=1}^N, \\
-\text{where }x_i\in\mathbb{R}^{N\times{n}}\text{ and }y_i\in\mathbb{R}^{N\times{m}}.
+\text{where }x_{1:N}\in\mathbb{R}^{N\times{n}}\text{ and }y_{1:N}\in\mathbb{R}^{N\times{m}}.
 \end{gathered}$$
 
 $$\begin{gathered}
