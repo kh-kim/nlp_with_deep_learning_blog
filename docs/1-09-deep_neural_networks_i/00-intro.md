@@ -7,4 +7,3 @@ permalink: /docs/dnn-1
 ---
 
 # Deep Neural Networks I
-
