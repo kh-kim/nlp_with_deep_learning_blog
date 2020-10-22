@@ -1,9 +1,8 @@
 ---
 layout: default
-title: SGD Exercise
+title: Wrap-up
 parent: Hyper-parameter Tuning
 nav_order: 1-11-5
 ---
 
-# 실습: SGD 적용하기
-
+# Wrap-up
