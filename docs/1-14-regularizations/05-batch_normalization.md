@@ -11,5 +11,7 @@ $$\begin{gathered}
 \text{batch}\_\text{norm}(x)=\gamma\frac{(x-\mu)}{\sqrt{\sigma^2+\epsilon}}+\beta \\
 \\
 \mu=x.\text{mean}(\text{dim}=0) \\
-\sigma=x.\text{std}(\text{dim}=0)
+\sigma=x.\text{std}(\text{dim}=0) \\
+\\
+\text{where }x\in\mathbb{R}^{N\times{n}}.
 \end{gathered}$$
