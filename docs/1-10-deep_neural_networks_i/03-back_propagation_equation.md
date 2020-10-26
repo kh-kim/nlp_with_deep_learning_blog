@@ -29,7 +29,7 @@ $$\begin{gathered}
  } \\
 \nabla_{W_2}\mathcal{L}(\theta)=\nabla_{W_2}\sum_{i=1}^N{
     \Bigg(
-        y-\Big(
+        y_i-\Big(
             \sigma(
                 h_{1,i}\cdot{W_2}+b_2
             )\cdot{W_3}+b_3
