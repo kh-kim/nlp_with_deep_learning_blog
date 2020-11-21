@@ -30,7 +30,7 @@ $$\begin{gathered}
 \end{gathered}$$
 
 $$\begin{gathered}
-\hat{\theta}=\underset{\theta\in\Theta}{\text{argmin }}\mathcal{L}(\theta)
+\hat{\theta}=\underset{\theta\in\Theta}{\text{argmin}}\mathcal{L}(\theta)
 \end{gathered}$$
 
 $$\begin{aligned}
