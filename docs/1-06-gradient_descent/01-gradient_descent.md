@@ -19,7 +19,7 @@ $$\begin{gathered}
 \end{gathered}$$
 
 $$\begin{gathered}
-x\leftarrow{x}-\eta\frac{\partial{y}}{\partial{x}}, \\
+x\leftarrow{x}-\eta\frac{d{y}}{d{x}}, \\
 \text{where }y=f(x).
 \end{gathered}$$
 
@@ -30,7 +30,7 @@ $$\begin{gathered}
 \end{gathered}$$
 
 $$\begin{gathered}
-\hat{\theta}=\underset{\theta\in\Theta}{\text{argmin}}\mathcal{L}(\theta)
+\hat{\theta}=\underset{\theta\in\Theta}{\text{argmin }}\mathcal{L}(\theta)
 \end{gathered}$$
 
 $$\begin{aligned}
