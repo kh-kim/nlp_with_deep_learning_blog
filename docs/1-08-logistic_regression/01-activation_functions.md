@@ -8,6 +8,6 @@ nav_order: 1-08-01
 # Activation Functions
 
 $$\begin{gathered}
-\sigma(x)=\frac{1}{x+e^{-x}} \\
+\sigma(x)=\frac{1}{1+e^{-x}} \\
 \text{Tanh}(x)=\frac{e^x-e^{-x}}{e^x+e^{-x}}
 \end{gathered}$$
