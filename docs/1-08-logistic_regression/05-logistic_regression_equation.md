@@ -21,7 +21,7 @@ $$\begin{gathered}
 \end{gathered}$$
 
 $$\begin{gathered}
-\hat{P}(x_i=\text{True})\approx\hat{y}_i
+\hat{P}(\text{y}=\text{True}|x_i)\approx\hat{y}_i
 \end{gathered}$$
 
 $$\begin{gathered}

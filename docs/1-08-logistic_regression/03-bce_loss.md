@@ -8,9 +8,9 @@ nav_order: 1-08-03
 # BCE Loss
 
 $$\begin{gathered}
-0\le{P(\text{x}=\text{True})}\le1 \\
+0\le{P(\text{y}=\text{True}|x)}\le1 \\
 \\
-P(\text{x}=\text{True})=1-P(\text{x}=\text{False})
+P(\text{y}=\text{True}|x)=1-P(\text{y}=\text{False}|x)
 \end{gathered}$$
 
 $$\begin{gathered}
