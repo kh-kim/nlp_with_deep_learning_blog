@@ -15,7 +15,7 @@ $$\begin{gathered}
 h_{2,i}&=\sigma(\tilde{h}_{2,i}) \\
 \tilde{h}_{2,i}&=h_{1,i}\cdot{W_2}+b_2 \\
 h_{1,i}&=\sigma(\tilde{h}_{1,i}) \\
-\tilde{h}_{1,i}&=x_i\cdot{W_1}+b_1
+\tilde{h}_{1,i}&=x_i^\intercal\cdot{W_1}+b_1
 \end{aligned}
 \end{gathered}$$
 
