@@ -19,8 +19,8 @@ $$\begin{gathered}
 \end{gathered}$$
 
 $$\begin{gathered}
-P(\text{y}|x)\approx\hat{y}=\text{softmax}(h_\ell) \\
-\text{where }h_i=f_i(h_{i-1})\text{ and }h_0=x.
+P_\theta(\text{y}|x)\approx\hat{y}=\text{softmax}(h_\ell), \\
+\text{where }h_i=f_i(h_{i-1})\text{ and }\ell\text{ is a number of layers.}
 \end{gathered}$$
 
 ## Cross Entropy Loss
