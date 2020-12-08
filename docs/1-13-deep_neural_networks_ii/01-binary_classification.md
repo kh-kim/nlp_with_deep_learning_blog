@@ -8,8 +8,8 @@ nav_order: 1-13-1
 # 이진 분류
 
 $$\begin{gathered}
-0\le{P(y=\text{True})}\le1 \\
-P(y=\text{True})=1-P(y=\text{False})
+0\le{P(y=\text{True}|x)}\le1 \\
+P(y=\text{True}|x)=1-P(y=\text{False}|x)
 \end{gathered}$$
 
 $$\begin{gathered}
