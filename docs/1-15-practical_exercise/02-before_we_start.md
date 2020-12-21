@@ -1,9 +1,9 @@
 ---
 layout: default
-title: Define Problems
+title: Before we start,
 parent: Practical Exercises
 nav_order: 1-15-02
 ---
 
-# 문제 정의하기
+# 시작하기 전에
 

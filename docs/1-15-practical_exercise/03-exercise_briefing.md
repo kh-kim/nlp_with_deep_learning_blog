@@ -1,9 +1,9 @@
 ---
 layout: default
-title: Load MNIST Dataset
+title: Exercise Briefing
 parent: Practical Exercises
 nav_order: 1-15-03
 ---
 
-# 실습: MNIST 데이터 로딩
+# 실습 소개
 

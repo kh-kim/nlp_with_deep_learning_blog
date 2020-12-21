@@ -1,9 +1,9 @@
 ---
 layout: default
-title: Define Architecture
+title: classifier_exercise
 parent: Practical Exercises
 nav_order: 1-15-04
 ---
 
-# 아키텍쳐 정하기
+# Classifier 구현하기
 
