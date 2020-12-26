@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Experimental Protocol Exercise
-parent: Experimental Protocols
+parent: How to Prevent Overfitting
 nav_order: 1-12-3
 ---
 

@@ -1,7 +1,7 @@
 ---
 layout: default
 title: What is Hyper-parameter
-parent: Hyper-parameter Tuning
+parent: Optimizer
 nav_order: 1-11-1
 ---
 

@@ -1,9 +1,9 @@
 ---
 layout: default
-title: Experimental Protocols
+title: How to Prevent Overfitting
 nav_order: 1-12
 has_children: true
-permalink: /docs/experimental-protocols
+permalink: /docs/how-to-prevent-overfitting
 ---
 
 # Experiment Protocols

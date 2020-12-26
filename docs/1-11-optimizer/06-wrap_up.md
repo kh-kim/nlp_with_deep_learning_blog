@@ -1,8 +1,8 @@
 ---
 layout: default
 title: Wrap-up
-parent: Hyper-parameter Tuning
-nav_order: 1-11-5
+parent: Optimizer
+nav_order: 1-11-6
 ---
 
 # Wrap-up

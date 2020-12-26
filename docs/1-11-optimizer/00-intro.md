@@ -1,9 +1,9 @@
 ---
 layout: default
-title: Hyper-parameter Tuning
+title: Optimizer
 nav_order: 1-11
 has_children: true
-permalink: /docs/hyper-param-tuning
+permalink: /docs/optimizer
 ---
 
 # Hyper-parameter Tuning

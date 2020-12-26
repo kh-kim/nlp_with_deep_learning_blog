@@ -1,8 +1,8 @@
 ---
 layout: default
 title: Adam Optimizer
-parent: Hyper-parameter Tuning
-nav_order: 1-11-3
+parent: Optimizer
+nav_order: 1-11-4
 ---
 
 # Adam Optimizer

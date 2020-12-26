@@ -1,7 +1,7 @@
 ---
 layout: default
 title: How to setup experiments
-parent: Experimental Protocols
+parent: How to Prevent Overfitting
 nav_order: 1-12-1
 ---
 
