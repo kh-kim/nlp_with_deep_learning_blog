@@ -7,12 +7,13 @@ nav_order: 1-11-3
 
 # Momentum & Adaptive LR
 
-$$\begin{aligned}
-\mathcal{L}(\theta_t)&=\frac{1}{N}\sum_{i=1}^N{
+$$\begin{gathered}
+\mathcal{L}(\theta_t)=\frac{1}{N}\sum_{i=1}^N{
     \Delta\Big(f(x_i;\theta_t),y_i\Big)
 } \\
-&=g_t
-\end{aligned}$$
+\\
+g_t=\nabla_\theta\mathcal{L}(\theta_t)
+\end{gathered}$$
 
 $$\begin{gathered}
 \theta_{t+1}=\theta_t-\eta\cdot{g_t}, \\ 
