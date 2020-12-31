@@ -57,6 +57,21 @@ Y=\begin{bmatrix}
 \text{where }Y\in\mathbb{R}^{n\times{m}}.
 \end{gathered}$$
 
+### 입력과 출력이 벡터인 함수
+
+$$\begin{gathered}
+y=\begin{bmatrix}
+    y_1 \\
+    \vdots \\
+    y_m
+\end{bmatrix}=f(x)=f(\begin{bmatrix}
+    x_1 \\
+    \vdots \\
+    x_n
+\end{bmatrix}), \\
+\text{where }f:\mathbb{R}^n\rightarrow\mathbb{R}^m.
+\end{gathered}$$
+
 ## 행렬의 미분
 
 ### 스칼라를 벡터로 미분
