@@ -7,4 +7,3 @@ permalink: /docs/introduction
 ---
 
 # Introduction
-
