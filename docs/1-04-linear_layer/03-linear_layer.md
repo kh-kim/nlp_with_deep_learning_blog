@@ -7,6 +7,10 @@ nav_order: 1-04-03
 
 # Linear Layer
 
+![](../../assets/images/1-04/03-linear.png)
+
+![](../../assets/images/1-04/03-how_it_works.png)
+
 $$\begin{gathered}
 y=f(x)=W^\top\cdot{x}+b, \\
 \text{where }x\in\mathbb{R}^n\text{, }W^\top\in\mathbb{R}^{m\times{n}}\text{, }b\in\mathbb{R}^m\text{ and }y\in\mathbb{R}^m.
