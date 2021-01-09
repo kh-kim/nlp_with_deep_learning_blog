@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Gradient Descent
+title: What is Gradient Descent
 parent: Gradient Descent
 nav_order: 1-06-03
 ---
