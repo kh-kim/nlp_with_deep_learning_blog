@@ -20,6 +20,14 @@ y=f(x) \\
 \frac{dy}{dx}=\lim_{h\rightarrow0}\frac{f(x+h)-f(x)}{(x+h)-x}
 \end{gathered}$$
 
+## 도함수
+
+$$\begin{gathered}
+g(x)=\lim_{h\rightarrow0}\frac{f(x+h)-f(x)}{(x+h)-x} \\
+\\
+y'=f'(x)=g(x)
+\end{gathered}$$
+
 ## 뉴턴 vs 라이프니츠
 
 $$\begin{gathered}
