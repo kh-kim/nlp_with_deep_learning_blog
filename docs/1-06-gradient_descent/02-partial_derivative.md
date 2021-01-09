@@ -10,6 +10,10 @@ nav_order: 1-06-02
 ## 편미분
 
 $$\begin{gathered}
+z=f(x,y)
+\end{gathered}$$
+
+$$\begin{gathered}
 \frac{\partial{f}}{\partial{x}}=\lim_{h\rightarrow0}\frac{f(x+h,y)-f(x,y)}{(x+h)-x}
 \end{gathered}$$
 
