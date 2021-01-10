@@ -46,7 +46,7 @@ $$\begin{gathered}
 앞서 설명한 공이 위치한 지점의 기울기에 따른 움직임의 방향을 수식으로 표현하면 다음과 같습니다.
 
 $$\begin{gathered}
-x\leftarrow{x}-\eta\frac{d{y}}{d{x}}, \\
+x\leftarrow{x}-\eta\cdot\frac{d{y}}{d{x}}, \\
 \text{where }y=f(x).
 \end{gathered}$$
 
@@ -60,9 +60,9 @@ x\leftarrow{x}-\eta\frac{d{y}}{d{x}}, \\
 이를 위해서 손실 함수를 가중치 파라미터로 미분하여 얻은 그래디언트를 (상수 $\eta$를 곱한 후) 현재 가중치 파라미터에서 빼 줍니다.
 
 $$\begin{gathered}
-\theta\leftarrow\theta-\eta\frac{\partial\mathcal{L}(\theta)}{\partial\theta} \\
+\theta\leftarrow\theta-\eta\cdot\frac{\partial\mathcal{L}(\theta)}{\partial\theta} \\
 \text{or} \\
-\theta\leftarrow\theta-\eta\nabla_\theta\mathcal{L}(\theta).
+\theta\leftarrow\theta-\eta\cdot\nabla_\theta\mathcal{L}(\theta).
 \end{gathered}$$
 
 좀 더 자세한 이야기는 조금 후에 이야기하겠습니다.
