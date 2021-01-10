@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Deep Neural Networks I
-nav_order: 1-10
+nav_order: 1-09
 has_children: true
 permalink: /docs/dnn-1
 ---
