@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Stochastic Gradient Descent Intuition
+title: SGD Intuition
 parent: Stochastic Gradient Descent
 nav_order: 1-10-02
 ---
