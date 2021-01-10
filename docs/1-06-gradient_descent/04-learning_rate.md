@@ -1,9 +1,9 @@
 ---
 layout: default
-title: Gradient Descent Exercise
+title: Learning rate
 parent: Gradient Descent
 nav_order: 1-06-04
 ---
 
-# 실습: Gradient Descent 구현
+# 학습률에 따른 성질
 
