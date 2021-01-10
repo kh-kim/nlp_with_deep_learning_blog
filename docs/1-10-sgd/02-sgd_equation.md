@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Batch Size
-parent: Stochastic Gradient Descent Equations
+title: Stochastic Gradient Descent Equations
+parent: Stochastic Gradient Descent
 nav_order: 1-10-02
 ---
 
