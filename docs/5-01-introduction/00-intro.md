@@ -6,5 +6,4 @@ has_children: true
 permalink: /docs/plm-introduction
 ---
 
-# Environmental Setup
-
+# Introduction to PLM
