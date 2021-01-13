@@ -5,7 +5,12 @@ parent: Optimizer
 nav_order: 1-11-3
 ---
 
-# Momentum & Adaptive LR
+# 모멘텀과 적응 학습률
+
+학습률<sup>learning rate</sup>은 대표적인 하이퍼파라미터<sup>hyper-parameter</sup>입니다.
+값이 너무 크면 학습이 안정적으로 이루지지 않고, 값이 너무 작으면 학습이 너무 더디기 때문에, 가장 먼저 튜닝이 필요한 파라미터이기도 합니다.
+
+그동안 우리가 활용해온 경사하강법<sup>gradient descent</sup>의 수식을 나타내면 다음과 같습니다.
 
 $$\begin{gathered}
 \mathcal{L}(\theta_t)=\frac{1}{N}\sum_{i=1}^N{
@@ -14,6 +19,9 @@ $$\begin{gathered}
 \\
 g_t=\nabla_\theta\mathcal{L}(\theta_t)
 \end{gathered}$$
+
+손실 함수<sup>loss function</sup>는 타겟 출력 값과 함수의 출력 값 사이의 차이( $\Delta$ )를 데이터셋의 샘플들에 대해 계산합니다.
+그리고 이것을 가중치 파라미터<sup>weight parameter</sup>에 대해서 미분하면 그래디언트<sup>gradient</sup> 벡터 $g_t$ 를 얻을 수 있을 것입니다.
 
 $$\begin{gathered}
 \theta_{t+1}=\theta_t-\eta\cdot{g_t}, \\ 
