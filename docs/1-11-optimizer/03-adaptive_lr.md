@@ -55,6 +55,7 @@ $$\begin{gathered}
 이것을 다시 표현하면 처음부터 현재까지의 디스카운트<sup>discount</sup> 파라미터가 곱해진 그래디언트의 누적 합이 됩니다.
 
 그럼 다음 가중치 파라미터를 업데이트하기 위해, 현재 가중치 파라미터에 모멘텀 그래디언트를 더해주게 됩니다.
+결국 풀어보면 모든 타임스텝<sup>time-step</sup>의 그래디언트를 누적하여 빼주는 형태로 수식이 정리되는 것을 볼 수 있습니다.
 
 $$\begin{aligned}
 \theta_{t+1}&=\theta_t+\tilde{g}_t \\
@@ -62,6 +63,8 @@ $$\begin{aligned}
     \gamma^{t-i}\cdot{g_i}
 }
 \end{aligned}$$
+
+앞선 모멘텀의 수식을 예시를 통해 좀 더 이해해보도록 하겠습니다.
 
 ## Adaptive LR
 
