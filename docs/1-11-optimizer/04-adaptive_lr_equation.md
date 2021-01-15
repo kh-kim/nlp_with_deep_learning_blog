@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Adam Optimizer
+title: Momentum, Adaptive LR and Adam Optimizer Equation
 parent: Optimizer
 nav_order: 1-11-4
 ---
