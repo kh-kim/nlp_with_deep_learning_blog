@@ -7,7 +7,7 @@ nav_order: 1-08-04
 
 # 로지스틱 회귀의 손실 함수
 
-이전 섹션에서 로지스틱 회귀는 사실 회귀<sup>regression</sup> 문제가 아니라 분류<sup>classification</sup> 문제라고 했습니다.
+이전 장에서 로지스틱 회귀는 사실 회귀<sup>regression</sup> 문제가 아니라 분류<sup>classification</sup> 문제라고 했습니다.
 그리고 분류 문제는 예측하고자 하는 값이 카테고리<sup>categorical</sup>의 이산<sup>discrete</sup>형 데이터라고 했습니다.
 그런데 사실 앞서 이야기 한 것을 돌이켜보면, 로지스틱 회귀 모델의 출력 값은 시그모이드<sup>sigmoid</sup>함수의 출력을 활용하므로 연속<sup>continuous</sup>형 데이터에 속합니다.
 그래서 0.5를 기준으로 참<sup>True</sup>과 거짓<sup>False</sup>으로 예측 분류할 수 있다고 했습니다.

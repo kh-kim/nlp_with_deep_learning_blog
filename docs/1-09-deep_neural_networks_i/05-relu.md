@@ -7,7 +7,7 @@ nav_order: 1-09-05
 
 # 렐루(ReLU)
 
-이전 섹션에서 시그모이드<sup>sigmoid</sup>와 같은 비선형 활성 함수<sup>non-linear activation function</sup>들로 인한 그래디언트 소실<sup>gradient vanishing</sup> 문제에 대해 이야기하였습니다.
+이전 장에서 시그모이드<sup>sigmoid</sup>와 같은 비선형 활성 함수<sup>non-linear activation function</sup>들로 인한 그래디언트 소실<sup>gradient vanishing</sup> 문제에 대해 이야기하였습니다.
 이것은 활성 함수의 미분 계수가 전 구간에서 1보다 작기 때문에 발생하는 문제라고 볼 수 있습니다.
 
 또한 시그모이드나 탄에이치의 경우에는 함수의 양 끝단에 갈수록 기울기가 0이 되는 형태를 띄고 있기 때문에, 모델의 학습이 진행되어 선형 계층의 결과 값이 0으로부터 멀어져서 어떤 의미를 지니게 될 수록 학습이 점점 더뎌지는 단점이 있었습니다.
