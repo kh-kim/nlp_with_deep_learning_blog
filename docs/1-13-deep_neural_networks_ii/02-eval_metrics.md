@@ -42,22 +42,54 @@ nav_order: 1-13-2
 
 ## 정답과 예측에 따른 명칭
 
+이진 분류 문제는 정답이 두 가지 클래스 중 하나에 속하는 문제입니다.
+따라서 실제 정답 2가지와 예측 클래스 2가지의 조합이 맞물려, 총 4가지 경우의 수를 고려할 수 있습니다.
+다음 표는 이 4가지 케이스에 대한 각각의 명칭을 나타낸 것입니다.
+
 ![](../../assets/images/1-13/02-binary_confusion_matrix.png)
 
-## 정밀도와 재현율
+일단 모델이 1번 클래스라고 예측한 것을 양성<sup>positive</sup>이라고 하고, 0번 클래스라고 예측한 것을 음성<sup>negative</sup>라고 부르도록 하겠습니다.
+이때 양성이라고 예측한 결과 중에서, 실제 양성이 맞는 경우 TP<sup>True Positive</sup>라고 하고, 가짜 양성에 해당될 경우 FP<sup>False Positive</sup>라고 부릅니다.
+마찬가지로 음성이라고 예측한 결과 중에서, 실제 음성이 맞는 경우 TN<sup>True Negative</sup>라고 하고, 가짜 음성일 경우 FN<sup>False Negative</sup>라고 부릅니다.
+즉, 양성과 음성을 떠나 실제 맞춘 경우에는 앞에 참<sup>True</sup>가 붙고, 틀린 경우에는 거짓<sup>False</sup>가 붙습니다.
+우리는 이 4가지 결과물들을 가지고 다양한 평가 지표를 도입할 수 있습니다.
+
+## 정확도, 그리고 정밀도와 재현율
+
+앞서 소개한 개념들을 활용하여 가장 널리 쓰이는 지표가 먼저 정확도<sup>accuracy</sup> 입니다.
+정확도의 수식은 다음과 같이 정의됩니다.
 
 $$\begin{gathered}
-\text{Accuracy}=\frac{TP+TN}{TP+FP+FN+TN} \\
+\text{Accuracy}=\frac{TP+TN}{TP+FP+FN+TN}
+\end{gathered}$$
+
+정확도는 '전체 예측 갯수'와 '전체 예측 중에서 실제로 맞춘 참<sup>True</sup> 갯수'의 비율을 나타냅니다.
+정확도의 경우에는 테스트 데이터셋의 클래스가 불균형<sup>imbalance</sup>할 경우 모델의 성능을 정확하게 반영하지 못합니다.
+또한 각 클래스 별 성능을 자세히 파악하고자 할 때 어려움을 겪을 수 있습니다.
+
+이때 우리가 고려해볼 수 있는 또 다른 지표는 바로 정밀도<sup>precision</sup>와 재현율<sup>recall</sup>입니다.
+정밀도와 재현율은 다음 수식과 같이 정의됩니다.
+
+$$\begin{gathered}
 \text{Precision}=\frac{TP}{TP+FP} \\
 \text{Recall}=\frac{TP}{TP+FN} \\
 \end{gathered}$$
+
+정밀도는 '모델이 1번 클래스라고 예측한 갯수'와 '예측 중에서 실제로 맞춘 갯수'의 비율을 나타냅니다.
+재현율은 '실제로 1번 클래스인 샘플의 갯수'와 '예측 중에서 실제로 맞춘 갯수'의 비율을 나타냅니다.<sup>[[2]](#footnote_2)</sup>
+이 정밀도와 재현율이 바로 앞서 이번 장 초반에 설명한 임계값 설정에 따른 상충되던 성능의 명칭입니다.
+보통 같은 모델 안에서 임계값을 바꾸게 되면 정밀도와 재현율이 서로 반대로 움직이는 것을 확인할 수 있습니다.
+특정 클래스에 대해 정밀도가 올라가면 재현율이 떨어지고, 재현율이 올라가면 정밀도가 떨어지게 됩니다.
+
+<a name="footnote_2">[2]</a>: 사실 많은 분들이 정밀도와 재현율에 대해서 많이 헷갈려하곤 합니다.
+이때 recall의 실제 또 다른 의미인 '회수'를 기억하면, 헷갈리지 않을 수 있습니다.
+즉, 실제 1번 클래스 중에서 모델이 얼마나 회수했는지에 대한 비율이라고 기억하면 됩니다.
 
 ## F1 점수
 
 $$\begin{gathered}
 \text{F1-Score}=2\times\frac{\text{Recall}\times\text{Precision}}{\text{Recall}+\text{Precision}}
 \end{gathered}$$
-
 
 ## AUROC
 
