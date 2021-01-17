@@ -106,6 +106,7 @@ $$\begin{gathered}
 
 ## AUROC
 
-앞선 상황에서 필요한 것이 바로 AUROC<sup>Area Under</sup>
+앞선 상황에서 필요한 것이 바로 AUROC<sup>Area Under Receiver Operating Characteristic</sup>입니다.
+결국 이 상황에서 사용자가 알고 싶은 것은 변화하는 임계값에 따른 모델의 성능입니다.
 
 ![](../../assets/images/1-13/02-auroc.png)
