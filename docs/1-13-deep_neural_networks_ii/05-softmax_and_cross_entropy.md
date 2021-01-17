@@ -184,7 +184,7 @@ y_i^\intercal\cdot\log{\hat{y}_i}&=[0,0,1,0]\times\log{\begin{bmatrix}
 소프트맥스에 그냥 로그를 취한 형태인, 로그소프트맥스 함수의 수식은 다음과 같습니다.
 
 $$\begin{gathered}
-\text{log-softmax}_i(x)&=\log{\frac{e^{x_i}}{\sum_{j=1}^n{e^{x_j}}}}
+\text{log-softmax}_i(x)=\log{\frac{e^{x_i}}{\sum_{j=1}^n{e^{x_j}}}}
 \end{gathered}$$
 
 그럼 로그소프트맥스 함수의 결과 값을 모델 출력 벡터 $\hat{y}_i$ 로 삼을 경우, 우리는 각 클래스별 로그 확률<sup>log probability</sup> 값을 얻을 수 있는 것인데요.
