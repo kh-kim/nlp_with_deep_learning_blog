@@ -37,7 +37,7 @@ y=\text{LeakyReLU}_\alpha(x)=\max(\alpha\cdot{x},x), \\
 \text{where }0\le\alpha<1.
 \end{gathered}$$
 
-![](../../assets/images/1-09/06-leaky_relu.png)
+![](../../assets/images/1-09/05-leaky_relu.png)
 
 리키렐루가 기존 렐루의 단점을 보완했다고 해서, 무조건 리키렐루가 좋은 것은 아닙니다.
 실제 실험을 해보면 주어진 문제와 데이터, 그리고 신경망의 구조에 따라 렐루가 좋을 때도 있고 리키렐루가 좋을 때도 있습니다.
