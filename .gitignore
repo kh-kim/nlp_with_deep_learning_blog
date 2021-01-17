@@ -16,3 +16,4 @@ bibtex/paper.fdb_latexmk
 bibtex/paper.blg
 bibtex/paper.bbl
 bibtex/paper.aux
+docs/*/*.pdf
