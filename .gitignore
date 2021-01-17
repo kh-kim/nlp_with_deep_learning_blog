@@ -9,3 +9,10 @@ node_modules
 .DS_Store
 .vscode
 assets.pptx
+bibtex/paper.synctex.gz
+bibtex/paper.log
+bibtex/paper.fls
+bibtex/paper.fdb_latexmk
+bibtex/paper.blg
+bibtex/paper.bbl
+bibtex/paper.aux
