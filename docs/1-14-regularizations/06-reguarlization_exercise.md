@@ -1,9 +1,9 @@
 ---
 layout: default
-title: Ensemble Methods
+title: Regularization Exercise
 parent: Regularizations
 nav_order: 1-14-06
 ---
 
-# 앙상블\(Ensemble\)
+# Regularization Exercise
 
