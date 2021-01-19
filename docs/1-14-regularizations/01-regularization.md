@@ -35,3 +35,21 @@ nav_order: 1-14-01
 일반화 오차를 낮추는 정규화 과정에서 종종 학습 오차<sup>training error</sup>가 높아질 수 있습니다.
 이것은 다양한 정규화 방식들이 보통 학습 오차를 최소화 하는 것을 방해하는 형태로 적용되기 때문인데요.
 이와 같은 과정을 통해 얻어진 '잘 일반화된' 모델은 노이즈에 더 강인한<sup>robust</sup> 모델이 됩니다.
+
+## 다양한 정규화 방법들
+
+오버피팅을 최소화하고 일반화 성능을 개선하는 것은 모델링에 있어서 가장 중요한 이슈인 만큼, 다양한 정규화 방법들이 존재합니다.
+크게 4가지 방법으로 나누어 볼 수 있는데요.
+
+1. 데이터를 통해 정규화
+    - 데이터 증강<sup>data augmentation</sup>
+2. 손실 함수를 통해 정규화
+    - 가중치 감쇠<sup>weight decay</sup>
+3. 신경망 계층을 통해 정규화
+    - 드랍아웃<sup>dropout</sup>
+    - 배치정규화<sup>batch normalization</sup>
+4. 학습 방식 또는 추론 방식을 통해 정규화
+    - 학습 조기 종료<sup>ealry stopping</sup>
+    - 배깅<sup>bootstrap aggregating, bagging</sup> & 앙상블<sup>ensemble</sup>
+
+이번 챕터에서는 여기에서 언급된 다양한 정규화 방식에 대해서 일부 자세히 살펴보도록 합니다.
