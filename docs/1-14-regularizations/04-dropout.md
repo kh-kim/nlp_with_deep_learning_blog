@@ -50,6 +50,25 @@ nav_order: 1-14-04
 ![](../../assets/images/1-14/04-implementation.png)
 
 이 그림에서는 이전 계층과 활성 함수 다음에 드랍아웃이 삽입되고, 이후에 다음 계층이 존재하는 것을 확인할 수 있습니다.
+이를 코드로 적용하면 다음과 같이 될 것입니다.
+
+```python
+p = 0.3
+
+net = nn.Sequential(
+    nn.Linear(300, 200),
+    nn.LeakyReLU(),
+    nn.Dropout(p),
+    nn.Linear(200, 100),
+    nn.LeakyReLU(),
+    nn.Dropout(p),
+    nn.Linear(100, 50),
+    nn.LeakyReLU(),
+    nn.Dropout(p),
+    nn.Linear(50, 10)
+)
+```
+
 보통은 신경망의 양 끝단인 입력 계층 이전과 출력 계층 이후에는 드랍아웃이 적용되지 않습니다.
 
 또한 추론과 학습이 다르게 동작하도록 해야 하기 때문에 학습과 추론 코드 상에서 추가적인 구현이 필요합니다.
