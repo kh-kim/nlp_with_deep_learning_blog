@@ -76,6 +76,17 @@ net = nn.Sequential(
 train() 과 eval() 이 호출되면 해당 객체 안에 포함된 드랍아웃과 같이 학습과 추론에서 다르게 동작하는 계층들은 자동으로 학습 모드와 추론 모드로 전환됩니다.
 물론 드랍아웃 자체도 nn.Module 을 상속받은 클래스의 객체일테니, train() 과 eval() 을 통해 모드를 직접 전환할 수 있습니다.
 
+```python
+for epoch_idx in range(n_epochs):
+    net.train()
+    for iter_idx in range(n_train_iters):
+        # Training procedure
+
+    net.eval()
+    for iter_idx in range(n_valid_iters):
+        # Validation procedure
+```
+
 따라서 학습<sup>training</sup>과 검증<sup>validation</sup>으로 구성되는 에포크<sup>epoch</sup>는 내부에서 모델의 학습 모드와 추론 모드의 전환 과정이 포함되어 있어야 합니다.
 모델의 기본 모드는 학습 모드이기 때문에, 만약 테스트와 같은 추론을 수행할 때 추론 모드로의 전환을 깜빡한다면 모델의 성능이 실제 성능이 비해서 낮게 나올 것입니다.
 그러므로 적절한 위치에서 train() 과 eval() 의 호출을 해주는 것을 잊지 않도록 해야 합니다.
