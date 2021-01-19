@@ -9,7 +9,7 @@ nav_order: 1-14-05
 
 이번엔 가장 널리 쓰이는 정규화 기법인 배치정규화<sup>batch normalization</sup>에 대해서 살펴보도록 하겠습니다.
 
-## Covariance Shift
+## Covariate Shift
 
 ## 배치정규화의 동작
 
