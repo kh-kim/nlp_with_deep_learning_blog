@@ -91,8 +91,6 @@ $$\begin{gathered}
 이것을 코드로 옮기면 다음과 같이 표현될 것입니다.
 
 ```python
-p = 0.3
-
 net = nn.Sequential(
     nn.Linear(300, 200),
     nn.LeakyReLU(),
