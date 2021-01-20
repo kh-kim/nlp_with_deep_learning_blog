@@ -13,7 +13,8 @@ nav_order: 1-14-04
 
 ## 드랍아웃의 동작 방식
 
-드랍아웃<sup>dropout</sup>이 어쩌면 그 답이 될 수 있을 것 같습니다.
+드랍아웃<sup>dropout</sup><sup>[[1]](#footnote_1)</sup>
+이 어쩌면 그 답이 될 수 있을 것 같습니다.
 드랍아웃은 임의의 노드를 일정 확률로 드랍<sup>drop</sup>해서 학습에 참여하지 않도록 하는 방법입니다.
 데이터를 신경망에 통과시키는 과정<sup>feed-forward</sup>에서 노드가 생략되므로, 자연스럽게 오류역전파<sup>back-propgatiopn</sup>에서도 제외됩니다.
 다음 그림은 드랍아웃의 개략적인 동작 방식을 보여줍니다.
@@ -23,6 +24,8 @@ nav_order: 1-14-04
 그림과 같이 일부 노드가 드랍되어, 해당 노드와 연결된 가중치들도 끊어지는 것을 볼 수 있습니다.
 드랍되는 노드는 매 미니배치마다 랜덤으로 선정됩니다.
 이때 노드의 드랍 확률 $p$ 가 하이퍼파라미터가 되어, 사용자가 최적의 설정 값을 찾아주어야 합니다.
+
+<a name="footnote_1">[1]</a>: Dropout: a simple way to prevent neural networks from overfitting, Srivastava et al., Journal of Machine Learning Research, 2014
 
 ## 학습과 추론 방식의 차이
 
