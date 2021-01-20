@@ -1,9 +1,9 @@
 ---
 layout: default
-title: Before we start,
+title: Workflow
 parent: Practical Exercises
 nav_order: 1-15-02
 ---
 
-# 시작하기 전에
+# 워크플로우 돌아보기
 
