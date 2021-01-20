@@ -5,7 +5,7 @@ parent: Introduction to Deep Learning
 nav_order: 1-02-03
 ---
 
-# ML Project Workflow
+# 머신러닝 프로젝트 워크플로우
 
 이번 장에서는 머신러닝 프로젝트를 진행할 때, 업무가 진행되는 방식에 대해서 이야기하고자 합니다.
 
