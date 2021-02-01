@@ -92,3 +92,27 @@ $$
 
 ## Evaluations
 
+$$\begin{aligned}
+\log{P(y)}&=\log{\sum_{c}{\sum_{x}{P(x,y,c)}}} \\
+&=\log{\sum_{c}{\sum_{x}{P(y|x,c)P(x|c)P(c)}}} \\
+&=\log{\sum_{c}{\sum_{x}{
+    \frac{P(y|x,c)P(x|c)}{P(x|y,c)}P(x|y,c)P(c)
+}}} \\
+&\ge\sum_{c}{\sum_{x}}P(c)P(x|y,c)\log{\frac{P(y|x,c)P(x|c)}{P(x|y,c)}} \\
+&=\mathbb{E}_{c\sim{P(\text{c})}}\Big[
+    \mathbb{E}_{x\sim{P(\text{x}|y,c)}}\big[
+        \log{P(y|x,c)}
+    \big]
+    -\text{KL}(P(\text{x}|y,c)\|P(\text{x}|c))
+\Big]
+\end{aligned}$$
+
+$$\begin{aligned}
+\log{P(y)}&=\log{\sum_{c}{\sum_{x}{P(x,y,c)}}} \\
+&=\log{\sum_{c}{\sum_{x}{P(y|x,c)P(c|x)P(x)}}} \\
+&=\log{\sum_{c}{\sum_{x}{
+    \frac{P(y|x,c)P(c|x)P(x)}{P(c)P(x|y,c)}P(x|y,c)P(c)
+}}} \\
+&\ge\sum_{c}{\sum_{x}}P(c)P(x|y,c)\log{\frac{P(y|x,c)P(c|x)P(x)}{P(c)P(x|y,c)}} \\
+&=\mathbb{E}_{c\sim{P(\text{c})},x\sim{P(\text{x}|y,c)}}\Big[\log{P(y|x,c)}+\log{\frac{P(c|x)}{P(c)}+\log{\frac{P(x)}{P(x|y,c)}}}\Big]
+\end{aligned}$$
