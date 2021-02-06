@@ -6,3 +6,25 @@ nav_order: 5-01-03
 ---
 
 # Downstream Tasks
+
+## Sequence Classification
+
+### Text Classification
+
+### Sentiment Analysis
+
+## Token Classification
+
+### Question Answering
+
+### POS Tagging
+
+### Named Entity Recognition (NER)
+
+### Extractive Summarization
+
+## Natural Langauge Generation
+
+### Abstractive Summarization
+
+### Machine Translation
