@@ -1,7 +1,7 @@
 ---
 layout: default
 title: ELMo
-parent: Transfer Learning
+parent: Previous Methods
 nav_order: 5-02-02
 ---
 
