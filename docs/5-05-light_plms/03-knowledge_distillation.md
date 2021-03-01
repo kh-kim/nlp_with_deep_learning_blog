@@ -14,24 +14,18 @@ $$\begin{gathered}
 \\
 \hat{\theta}_T,\hat{W}_T=\underset{\theta_T\in\Theta,W_T\in\mathcal{W}}{\text{argmax}}{
     \sum_{i=1}^N{
-        \log{P(y_i|x_i;\theta_T,W_T)}
+        \log{P(y_i|x_i;\theta_T,W_T,\tau=1)}
     }
 }
 \end{gathered}$$
 
 $$\begin{aligned}
-P(\cdot|x_i;\theta_T,W_T,\tau)&=\text{softmax}\Big(
-    \frac{W_T\cdot{f(x_i;\theta_T)}}{\tau}
+P(\cdot|x_i;\theta,W,\tau)&=\text{softmax}\Big(
+    \frac{W\cdot{f(x_i;\theta)}}{\tau}
 \Big) \\
 &=\text{softmax}\Big(
-    \frac{W_T\cdot{h_i}}{\tau}
+    \frac{W\cdot{h_i}}{\tau}
 \Big).
-\end{aligned}$$
-
-$$\begin{aligned}
-P(\cdot|x_i;\theta_S,W_S,\tau)&=\text{softmax}\Big(
-    \frac{W_S\cdot{f(x_i;\theta_S)}}{\tau}
-\Big) \\
 \end{aligned}$$
 
 $$\begin{aligned}
