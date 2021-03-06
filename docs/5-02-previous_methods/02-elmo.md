@@ -34,8 +34,8 @@ $$\begin{gathered}
 \begin{aligned}
 \mathcal{L}(\theta_\text{PLM})=\sum_{t=1}^n
     \Big(
-        &\log{P(w_t|t_{<t};\theta_{\text{emb}},\overrightarrow{\theta}_{\text{LM}},\theta_{\text{softmax}})} \\
-        &+\log{P(w_t|t_{>t};\theta_{\text{emb}},\overleftarrow{\theta}_{\text{LM}},\theta_{\text{softmax}})}
+        &\log{P(w_t|w_{<t};\theta_{\text{emb}},\overrightarrow{\theta}_{\text{LM}},\theta_{\text{softmax}})} \\
+        &+\log{P(w_t|w_{>t};\theta_{\text{emb}},\overleftarrow{\theta}_{\text{LM}},\theta_{\text{softmax}})}
     \Big),
 \end{aligned} \\
 \text{where }\theta_{\text{PLM}}=\{\theta_\text{emb},\overrightarrow{\theta}_\text{LM},\overleftarrow{\theta}_\text{LM},\theta_\text{softmax}\}.
