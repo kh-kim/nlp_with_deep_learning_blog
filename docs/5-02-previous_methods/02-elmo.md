@@ -56,7 +56,7 @@ $$\begin{gathered}
 \end{gathered}$$
 
 $$\begin{gathered}
-P(\cdot|w_{<t},w_t)=\text{softmax}(\overrightarrow{h}_{t,\ell};\theta_\text{softmax})
+P(\cdot|w_{<t};\theta_\text{PLM})=\text{softmax}(\overrightarrow{h}_{t,\ell};\theta_\text{softmax})
 \end{gathered}$$
 
 $$\begin{aligned}
